@@ -1,0 +1,19 @@
+**Title:** Antimicrobial resistance in urinary *Escherichia coli* at a tertiary hospital in Telangana: a cross-sectional study
+
+**Abstract**
+
+**Background:** Urinary tract infections (UTIs) are common, and resistance in *E. coli* is rising. We studied resistance patterns and risk factors for ESBL production.
+
+**Methods:** We did a cross-sectional study at a tertiary hospital in Telangana from January to December 2025. We included all *E. coli* isolates from urine samples with significant growth. Susceptibility was tested by disc diffusion and read using CLSI breakpoints. ESBL production was confirmed by the combined disc test. We used logistic regression to find factors linked to ESBL production.
+
+**Results:** We studied 312 isolates. ESBL was present in 158 (50.6%). Resistance was 86.9% to ampicillin, 63.1% to ciprofloxacin, 53.8% to ceftriaxone, 7.4% to nitrofurantoin, 3.8% to fosfomycin and 4.5% to meropenem. Prior antibiotic use (adjusted OR 2.4, P < 0.001) and hospitalisation (adjusted OR 1.7, P = 0.048) were associated with ESBL.
+
+**Conclusions:** Prior antibiotic use causes ESBL production in urinary *E. coli*. Our hospital should stop using ceftriaxone for UTI, and nitrofurantoin should become the first-line drug for all UTIs in Telangana.
+
+**Methods (key points)**
+
+*Study population.* All urine samples sent to the microbiology laboratory during the study period were screened. Isolates were identified by standard methods.
+
+*Data collection.* Age, sex, prior antibiotic use in the last three months, and hospitalisation were taken from request forms.
+
+*Statistics.* Variables with P < 0.2 in the univariable analysis entered the multivariable model.

@@ -1,0 +1,525 @@
+---
+title: "**Value of Peer Review**"
+subtitle: "**Human and AI-assisted**"
+author: "<br> Dr Rahul Narang"
+institute: "Dean and Professor & Head, Microbiology, AIIMS Bibinagar <br> Workshop on AI in Health Research · NAMS · MGIMS Sevagram <br> 24 November 2026"
+format:
+  revealjs:
+    slide-number: true
+    css: style.css
+    self-contained: true
+    embed-resources: true
+    mermaid-format: svg
+    footer: "Session 11 · Value of Peer Review: Human and AI-Assisted"
+revealjs-plugins:
+  - tabset
+---
+
+## Contents
+
+::: {.incremental}
+-   **Why** peer review
+-   A **structured review**
+-   Activity: **Review this**
+-   **Human vs AI** review
+-   **Rules** for AI in peer review
+-   **Responding** to reviewers
+-   An **AI appraisal checklist**
+:::
+
+::: notes
+**Session 11 · 45 min · Day 2, 16:15–17:00.** Clock: 0:00–0:30 (cumulative 0.5 min).
+
+Welcome. Plan on the clock: Why 0–4 · Structured review 4–9 · Review this 9–20 · Human vs AI 20–30 · Rules for AI 30–36 · Responding 36–41 · Checklist and take-home 41–45.
+
+This session builds on the 14:00 abstract peer-feedback group work and on Session 10 (why manuscripts get rejected). I do **not** repeat the list of rejection reasons. Here we practise the *reviewer's* side and the *author's reply*.
+
+All data are synthetic and illustrative: a cross-sectional study of 312 urinary *E. coli* isolates at a tertiary hospital in Telangana (same example as Session 4). The manuscript excerpt, the "human" review and the author replies were written for teaching.
+:::
+
+## More than a gate
+
+::: {.callout-important appearance="simple"}
+Peer review is **quality control and improvement**, not only gatekeeping.
+:::
+
+::: {.incremental}
+-   It catches errors the authors cannot see.
+-   It tells the editor what is sound and what is not.
+-   It gives authors a path to a better paper.
+:::
+
+::: notes
+Clock: 0:30–2:00 (cumulative 2 min).
+
+Link to the 14:00 abstract feedback activity: they already gave and received peer feedback today. Ask: "What was the most useful comment you got?"
+:::
+
+## Models of peer review {.smaller}
+
+| Model | Who knows whom |
+|---|---|
+| **Single-blind** | Reviewers know the authors; authors do not know the reviewers |
+| **Double-blind** | Neither side knows the other |
+| **Open** | Names (and sometimes reports) are public |
+| **Post-publication** | Readers comment after the paper is online |
+
+::: notes
+Clock: 2:00–3:30 (cumulative 3.5 min).
+
+Journals vary and some mix features. Always check the journal's own description before you agree to review.
+:::
+
+## The reviewer's duties {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+-   **Competence:** review only what you can judge
+-   **Timeliness:** reply on time; say early if you cannot
+-   **Confidentiality:** do not share the manuscript
+:::
+
+::: {.column width="50%"}
+-   **Conflicts of interest:** declare them
+-   **Constructive:** objective, not hostile
+:::
+:::::
+
+::: aside
+COPE. *Ethical Guidelines for Peer Reviewers* (v1, March 2013; v2, 2017).
+:::
+
+::: notes
+Clock: 3:30–4:00 (cumulative 4 min). End of Why.
+
+Checked against the COPE PDF (v1, March 2013, Irene Hames for COPE Council; read from a copy hosted by the Canadian Association of Radiologists because publicationethics.org blocked automated access). A web search shows v2 (September 2017) is current. I did not open v2, so quote the v1 wording only after checking the current version at publicationethics.org.
+:::
+
+# A structured review {.smaller}
+
+## The format
+
+| Part | Content |
+|---|---|
+| **1. Summary** | One paragraph: what the paper did and found |
+| **2. Major concerns** | Problems that change whether the conclusions hold |
+| **3. Minor concerns** | Clarity, wording, small errors |
+| **4. Recommendation** | Accept, minor, major, reject (for the editor) |
+
+Written for **the editor and the authors**.
+
+::: notes
+Clock: 4:00–6:00 (cumulative 6 min).
+
+The summary proves you understood the paper. Order major concerns by importance. Many journals ask for comments to the authors and confidential comments to the editor. Follow the journal form.
+:::
+
+## What to check {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+-   [ ] **Question** and novelty
+-   [ ] Does the **design fit** the question?
+-   [ ] **Methods** reproducible?
+-   [ ] **Reporting guideline** followed? (EQUATOR: STROBE, CONSORT…)
+:::
+
+::: {.column width="50%"}
+-   [ ] Do the **statistics and results** support the conclusions?
+-   [ ] **Ethics** and consent stated?
+-   [ ] **References** correct and relevant?
+:::
+:::::
+
+::: notes
+Clock: 6:00–8:00 (cumulative 8 min).
+
+EQUATOR Network hosts the reporting guidelines. For this session the relevant one is STROBE (observational studies). Keep to the list; do not turn this into a statistics lecture.
+:::
+
+## Tone: critique the work, not the authors {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+::: {.callout-warning appearance="simple"}
+**Poor.** "The authors clearly do not understand study design."
+:::
+:::
+
+::: {.column width="50%"}
+::: {.callout-tip appearance="simple"}
+**Better.** "The conclusion says 'causes'. A cross-sectional design shows association only. Please rephrase and add this as a limitation."
+:::
+:::
+:::::
+
+Be **specific**, **constructive**, **evidence-based**.
+
+::: notes
+Clock: 8:00–9:00 (cumulative 9 min). End of structured review.
+
+Illustrative comments written for teaching.
+:::
+
+# Activity: Review this {.smaller}
+
+::: {.callout-note appearance="simple"}
+**Pairs · 8 min.** Read the excerpt on the next two slides. Write a **short review** with the template on your handout: summary, major, minor, recommendation.
+:::
+
+::: notes
+Clock: 9:00–10:00 (cumulative 10 min). Activity starts.
+
+Hand out the handout. It has the excerpt, the template and the AI checklist, but no answers. Pairs work for 8 minutes. I show the excerpt on two slides for those who prefer the screen.
+:::
+
+## Manuscript excerpt: abstract {.smaller}
+
+**Antimicrobial resistance in urinary *E. coli* at a tertiary hospital in Telangana: a cross-sectional study**
+
+**Methods:** Cross-sectional study, January–December 2025. We included **all *E. coli* isolates** from urine samples with significant growth. Susceptibility by disc diffusion, read using **CLSI breakpoints**. ESBL by combined disc test. Logistic regression for factors linked to ESBL.
+
+**Results:** 312 isolates. ESBL in 158 (50.6%). Resistance: ampicillin 86.9%, ciprofloxacin 63.1%, ceftriaxone 53.8%, nitrofurantoin 7.4%, fosfomycin 3.8%, meropenem 4.5%. Prior antibiotic use (aOR 2.4, **P < 0.001**) and hospitalisation (aOR 1.7, **P = 0.048**) were associated with ESBL.
+
+**Conclusions:** **Prior antibiotic use causes ESBL production.** Our hospital should stop using ceftriaxone for UTI, and nitrofurantoin should become the first-line drug **for all UTIs in Telangana**.
+
+::: notes
+Clock: 10:00–12:00 (cumulative 12 min). Pairs start writing now.
+
+**Illustrative, synthetic manuscript excerpt** (full text in `excerpt.md`). The numbers match the Session 4 running example. The problems are planted on purpose.
+
+Bold type on the slide only helps the room read. Do not hint at the problems.
+:::
+
+## Manuscript excerpt: key Methods {.smaller}
+
+**Study population.** All urine samples sent to the microbiology laboratory during the study period were screened. Isolates were identified by standard methods.
+
+**Data collection.** Age, sex, prior antibiotic use in the last three months, and hospitalisation were taken from request forms.
+
+**Statistics.** Variables with P < 0.2 in the univariable analysis entered the multivariable model.
+
+::: notes
+Clock: 12:00–18:00 (cumulative 18 min).
+
+Pairs write their review. Leave this slide up. Walk round and help. Start the debrief at 18:00.
+:::
+
+## Answer key: planted problems {.smaller}
+
+1.  **Unit of analysis unclear.** "All isolates": no first-isolate-per-patient rule, no de-duplication
+2.  **CLSI/EUCAST version** not stated
+3.  **No sample-size justification**
+4.  **No ethics statement**
+5.  **Causal conclusion** from a cross-sectional design
+6.  **Policy recommendation** not supported by one hospital's data
+7.  **P values without confidence intervals**
+
+::: notes
+Clock: 18:00–20:00 (cumulative 20 min). End of activity.
+
+Reveal after 2 minutes of sharing. **Illustrative:** these seven are the problems I planted. Other genuine problems exist in the text (for example variable selection by P < 0.2). Credit pairs who find them.
+
+The excerpt shows no flow of samples or table of patient characteristics because it is an excerpt. Do not count that as a planted problem.
+:::
+
+# Human vs AI review {.smaller}
+
+## Two reviewers
+
+::: {.callout-note appearance="simple"}
+**Prompt to the AI, typed exactly:**
+
+*You are a peer reviewer. Review this manuscript excerpt.*
+
+(followed by the excerpt, unedited)
+:::
+
+::: {.incremental}
+-   **Human-style review:** written by me as an expert-style example
+-   **AI review:** raw output, **not edited**
+:::
+
+::: notes
+Clock: 20:00–21:00 (cumulative 21 min).
+
+**Be open about what "human" means here.** The "human" review was written by the assistant that prepared this deck, *after* planting the seven problems, so it catches all seven by design. It is an expert-style model answer, not a measurement of human reviewers. **Dr Narang: replace it with your own review before the session if you can.**
+
+The AI review is the raw output from one call to a small Claude model (Haiku) on 23 Nov 2026, no tools, no web, no context. Prompt and raw output: `ai_demo/review_prompt_and_output.md`. Another tool, model or day will give a different review.
+:::
+
+## Two reviews, side by side {.smaller}
+
+::: {.panel-tabset}
+
+### Human-style
+
+**Summary.** Cross-sectional study of 312 urinary *E. coli* isolates; ESBL 50.6%; prior antibiotic use and hospitalisation associated with ESBL.
+
+**Major.**
+
+1.  "Causes" is not supported by a cross-sectional design.
+2.  Policy advice for all of Telangana from one hospital.
+3.  Unit of analysis: repeat isolates? Use first isolate per patient.
+4.  No sample-size justification.
+5.  Name the CLSI edition; state the ESBL criterion.
+6.  Ethics approval and consent waiver not stated.
+7.  Report 95% CIs with every OR and percentage.
+
+**Minor.** Name the identification method; follow STROBE.
+
+**Recommendation.** Major revision.
+
+### AI (raw)
+
+**Recommendation: Major revision.** Lists 11 major and 6 minor comments. Leads with:
+
+1.  Causal language not supported by design
+2.  Prescribing recommendations overreach
+3.  Denominator and sampling frame missing; repeat isolates
+4.  Patient characteristics absent
+5.  Confounder collection too thin
+6.  Exposure definitions unclear
+7.  Statistics: P < 0.2 selection; CIs missing
+8.  AST needs CLSI edition, QC strain, denominators
+9.  ESBL confirmation criterion; AmpC
+10. ESBL 50.6% vs ceftriaxone 53.8%: check consistency
+11. Ethics and data governance not described
+
+:::
+
+::: notes
+Clock: 21:00–25:00 (cumulative 25 min).
+
+The AI tab is my short list of the AI's own comment headings, in its order. The full raw text is in `ai_demo/`. Walk through each tab for about 2 minutes. The "human-style" review is illustrative and written for teaching.
+:::
+
+## Who caught what {.smaller}
+
+| Problem | Human-style | AI |
+|---|---|---|
+| Causal conclusion | ✔ | ✔ |
+| Policy overreach | ✔ | ✔ |
+| Unit of analysis / repeat isolates | ✔ | ✔ |
+| CLSI version | ✔ | ✔ |
+| Ethics statement | ✔ | ✔ |
+| P values without CIs | ✔ | ✔ |
+| **Sample-size justification** | ✔ | **✘ missed** |
+| Variable selection by P < 0.2 (unplanted) | | ✔ |
+| ESBL vs ceftriaxone consistency (unplanted) | | ✔ |
+
+::: notes
+Clock: 25:00–28:00 (cumulative 28 min).
+
+**Honest result from this one run:** the AI caught 6 of 7 planted problems and missed the sample-size justification. It also found two real problems I had not planted. Its 95% CI for 158/312 ("roughly 45% to 56%") is right. In the other direction, the "human-style" column catches all seven by design, so do not read this table as "AI is worse than humans" or "AI is as good as humans". It shows what one AI review looked like.
+
+**Missed by both:** whether the data are real. Neither reviewer can tell from text whether the isolates were truly tested as described.
+:::
+
+## What to take from this {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+**Good at**
+
+-   Checklist and **reporting gaps**
+-   Missing **CIs**, denominators, methods detail
+-   Language
+:::
+
+::: {.column width="50%"}
+**Weak at**
+
+-   **Context:** it asked for a flow diagram and a patient table from a 300-word excerpt
+-   Generic points (data dictionary, "reporting checklist")
+-   Novelty, plausibility, whether **data are real**
+:::
+:::::
+
+::: aside
+AI can also invent problems, facts or references, and can agree too much. This run did **not** invent a reference and was not flattering. Do not assume that holds next time.
+:::
+
+::: notes
+Clock: 28:00–30:00 (cumulative 30 min). End of Human vs AI.
+
+Draw only what the raw output shows. Observed in this run: generic or excerpt-blind requests (flow diagram, characteristics table, ethics approval number, data dictionary); a sloppy technical line ("disc breakpoints for nitrofurantoin and fosfomycin differ by disc content"; check against CLSI before trusting it); no invented references; no flattery.
+
+Not observed in this run but known risks of AI feedback: sycophancy, invented problems, invented references. Say these are known risks, not findings of this run.
+:::
+
+# Rules for AI in peer review {.smaller}
+
+## What ICMJE says {.smaller}
+
+> "Reviewers must adhere to the journal's stated policy on the use of AI…"
+
+::: {.incremental}
+-   …or **ask the journal's permission** before using AI
+-   The manuscript is **confidential**. Do not upload it where confidentiality **cannot be assured**
+-   If you use AI, **tell the journal**
+-   **Check the output**: AI can be incorrect, incomplete or biased
+:::
+
+::: aside
+ICMJE Recommendations, Section V.B "Use of AI by Reviewers" (icmje.org). Fetched 23 Nov 2026.
+:::
+
+::: notes
+Clock: 30:00–32:00 (cumulative 32 min).
+
+The quote on the slide is 12 words, copied from the ICMJE page. The bullets are my short paraphrase of the same section: permission or follow policy; confidentiality "may prohibit the uploading of the manuscript to software or other AI technologies where confidentiality cannot be assured unless such use of AI is explicitly permitted by journals"; disclose use to the journal; ensure the content is "appropriate and valid". Policies keep changing. Read the current page and the journal's own policy before you review.
+:::
+
+## In practice {.smaller}
+
+::: {.callout-important appearance="simple"}
+You stay **accountable** for every word of your review.
+:::
+
+| Before you review | Do |
+|---|---|
+| Read the journal's AI policy | Follow it |
+| Policy is silent or unclear | **Ask the editor** |
+| Tempted to paste the manuscript into a public chatbot | **Do not** |
+| You used AI for wording or checks | **Disclose** it |
+
+::: notes
+Clock: 32:00–33:00 (cumulative 33 min).
+
+This is my reading of the ICMJE reviewer section. The journal's own rules come first. A public chatbot usually cannot assure confidentiality; some tools offer private or enterprise modes, but only a journal can permit their use.
+:::
+
+## For authors: AI-check your own draft {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+**Legitimate**
+
+-   Use AI to **pre-review your own** de-identified draft before you submit
+-   Ask it to compare the draft with **STROBE or CONSORT**
+-   Ask it for gaps, unclear text and language fixes
+:::
+
+::: {.column width="50%"}
+**Same rules apply**
+
+-   **Verify** every comment against your manuscript
+-   **No patient identifiers** or unpublished data you cannot share
+-   **Disclose** AI use as the journal requires
+-   You remain **responsible**
+:::
+:::::
+
+::: aside
+ICMJE Section V.A "Use of AI by Authors": humans are responsible for submitted material; AI tools should not be listed as authors; disclose AI use at submission.
+:::
+
+::: notes
+Clock: 33:00–36:00 (cumulative 36 min). End of Rules.
+
+This is my recommendation, built on the ICMJE author section (fetched 23 Nov 2026; paraphrased, not a quote). Never paste another team's manuscript into a tool. Your own draft is yours to share, but check your data-sharing approvals first.
+:::
+
+# Responding to reviewers {.smaller}
+
+## Point-by-point basics
+
+::: {.incremental}
+-   **Thank** the reviewers and the editor
+-   **Answer every comment.** Never ignore one
+-   Show **each change**, with page and line numbers
+-   **Disagree politely**, with evidence
+-   Keep the tone calm, even when the comment is not
+:::
+
+::: notes
+Clock: 36:00–38:00 (cumulative 38 min).
+
+Session 10 covered why papers are rejected. This is what to do when the answer is "revise". The same structured layout helps the editor. Quote the comment, then your reply, then the change.
+:::
+
+## One good reply, one poor reply {.smaller}
+
+> **Reviewer 1, comment 1.** The conclusion says prior antibiotic use "causes" ESBL production. A cross-sectional design shows association only.
+
+::: {.panel-tabset}
+
+### Poor
+
+*"The reviewer is wrong. Everyone knows antibiotics cause resistance. No change made."*
+
+### Good
+
+*"Thank you. We agree. We changed "causes" to "was associated with" in the Abstract (page 2, line 31) and Conclusions (page 11, lines 240–243), and added a limitations paragraph on temporality and residual confounding (page 10, lines 228–236)."*
+
+:::
+
+::: notes
+Clock: 38:00–40:30 (cumulative 40.5 min).
+
+**Illustrative reply and page numbers, written for teaching.** Ask the room why the poor reply fails: it is hostile, it skips the point, and it shows no change. The good reply is short, specific and findable.
+:::
+
+## When you disagree {.smaller}
+
+> **Reviewer 2.** Please report resistance by infection type.
+
+::: {.callout-tip appearance="simple"}
+*"Thank you. We agree this would help. The laboratory request forms did not record infection type, so we cannot do this. We now state this as a limitation (page 10, lines 232–234) and suggest it for future work."*
+:::
+
+**Polite · specific · evidence · still shows what changed.**
+
+::: notes
+Clock: 40:30–41:00 (cumulative 41 min). End of Responding.
+
+Illustrative. The missing infection type is a made-up reason, consistent with the excerpt (data from request forms). If you cannot do something, say why and show what you did instead.
+:::
+
+# AI appraisal checklist {.smaller}
+
+## Judging AI-generated feedback {.smaller}
+
+For feedback on **your own paper**, or on a **review**:
+
+-   [ ] Is each comment **specific to this text**?
+-   [ ] Can I **verify** it against the manuscript?
+-   [ ] Any **invented facts or references**?
+-   [ ] Does it **miss the core scientific flaw**?
+-   [ ] Is the **tone** appropriate?
+-   [ ] Would I **sign** it as my own?
+
+::: notes
+Clock: 41:00–43:00 (cumulative 43 min).
+
+Run the checklist on the AI review from earlier. Specific to this text? Mostly, but the flow diagram and patient table requests are generic for an excerpt. Verified? Check the CI and the "CLSI disc content" line. Invented references? None. Missed a core flaw? It missed sample size. Would you sign it? Only after editing and only if the journal allows AI use.
+:::
+
+## Take home {.smaller}
+
+::: {.incremental}
+-   Peer review **improves** papers. Do it well.
+-   Use a **structure**: summary, major, minor, recommendation.
+-   AI is good at **checklist gaps**. It is not a **judge** of science or truth.
+-   **Do not upload** a manuscript you review. Follow the journal's AI policy and **disclose**.
+-   **Verify** every AI comment. You are accountable.
+:::
+
+::: notes
+Clock: 43:00–44:00 (cumulative 44 min).
+:::
+
+# Questions? {.smaller}
+
+::: notes
+Clock: 44:00–45:00 (cumulative 45 min). End of session.
+:::
+
+## Thank you
+
+Slides prepared with Dr Arun Mitra, AIIMS Bibinagar.
+
+::: notes
+After 45:00. Closing slide.
+:::
