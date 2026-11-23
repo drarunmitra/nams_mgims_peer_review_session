@@ -49,10 +49,18 @@ Peer review is **quality control and improvement**, not only gatekeeping.
 -   It gives authors a path to a better paper.
 :::
 
+::: aside
+In a masked before-and-after study of 111 accepted manuscripts, 33 of 34 quality items improved after peer review and editing (Goodman, *Ann Intern Med* 1994). But 607 BMJ reviewers found on average 2.6 of 9 inserted major errors (Schroter, *J R Soc Med* 2008). Abstracts read.
+:::
+
 ::: notes
 Clock: 0:30–2:00 (cumulative 2 min).
 
 Link to the 14:00 abstract feedback activity: they already gave and received peer feedback today. Ask: "What was the most useful comment you got?"
+
+Evidence (docs/lit_C_response_and_appraisal.md): Goodman SN et al., *Ann Intern Med* 1994;121:11-21, PMID 8198342, **abstract read, not full text**. 111 consecutive accepted manuscripts at one journal, 34-item tool, masked assessors. 33 of 34 items moved towards improvement; the share of items scored 3 or more rose by an absolute 7.3% (95% CI 3.3 to 11.3) from a baseline of 75%. Peer review and editing cannot be separated, only accepted papers were studied, and it measures report quality, not research quality. ICMJE says "Peer review often helps authors and editors improve the quality of reporting."
+
+**Reviewers also miss things** (docs/lit_A_peer_review_basics.md). Schroter S et al., *J R Soc Med* 2008;101:507-14, **abstract only**: 607 BMJ reviewers each received three test papers with 9 major and 5 minor inserted errors; the average number of major errors found was 2.58, 2.71 and 3.0 across the three papers, and training had small effects. Hopewell S et al., *BMJ* 2014;349:g4145 (full text), 93 trial reports in open-review journals: 38% of submitted manuscripts did not describe sequence generation and 34% did not describe sample size; reviewers' requested changes were relatively few. The Cochrane review (Jefferson 2007, abstract only) found "little empirical evidence" on editorial peer review. So: peer review helps, it is not a perfect filter, and that is why a structure and a checklist help.
 :::
 
 ## Models of peer review {.smaller}
@@ -61,13 +69,19 @@ Link to the 14:00 abstract feedback activity: they already gave and received pee
 |---|---|
 | **Single-blind** | Reviewers know the authors; authors do not know the reviewers |
 | **Double-blind** | Neither side knows the other |
-| **Open** | Names (and sometimes reports) are public |
-| **Post-publication** | Readers comment after the paper is online |
+| **Open** | No single meaning: for example names known, or reports published |
+| **Post-publication** | Readers can comment on the published version |
+
+::: aside
+Open peer review has no standard definition: 122 definitions, 22 configurations (Ross-Hellauer, *F1000Research* 2017).
+:::
 
 ::: notes
 Clock: 2:00–3:30 (cumulative 3.5 min).
 
 Journals vary and some mix features. Always check the journal's own description before you agree to review.
+
+Source: Ross-Hellauer T, *F1000Research* 2017;6:588 (full text read): "Traditional peer review operates as either 'single-blind', where authors do not know reviewers' identities, or 'double-blind', where both authors and reviewers remain anonymous." Open peer review: the paper found 122 definitions and 22 distinct configurations of 7 traits (open identities, open reports, open participation, open interaction, open pre-review manuscripts, open final-version commenting, open platforms). **I did not find an authoritative definition of "post-publication review"**; the row uses the paper's trait "open final-version commenting" in plain words. ICMJE II.C.2.c says journals "should publish a clear, transparent description of their peer-review process".
 :::
 
 ## The reviewer's duties {.smaller}
@@ -86,18 +100,20 @@ Journals vary and some mix features. Always check the journal's own description 
 :::::
 
 ::: aside
-COPE. *Ethical Guidelines for Peer Reviewers* (v1, March 2013; v2, 2017).
+ICMJE Recommendations, II.C "Peer Reviewers"; COPE, *Ethical Guidelines for Peer Reviewers* (v1, March 2013).
 :::
 
 ::: notes
 Clock: 3:30–4:00 (cumulative 4 min). End of Why.
 
-Checked against the COPE PDF (v1, March 2013, Irene Hames for COPE Council; read from a copy hosted by the Canadian Association of Radiologists because publicationethics.org blocked automated access). A web search shows v2 (September 2017) is current. I did not open v2, so quote the v1 wording only after checking the current version at publicationethics.org.
+ICMJE II.C (opened in full): reviewers "should keep manuscripts and the information they contain strictly confidential"; "should declare their relationships and activities that might bias their evaluation" and recuse themselves if a conflict exists; are expected "to respond promptly" and to submit reviews within the agreed time; and "Reviewers' comments should be constructive, honest, and polite." Reviewers who get help from a trainee or colleague should acknowledge that person in comments to the editor.
+
+COPE: only **Version 1 (March 2013, Irene Hames for COPE Council)** was read, from two mirror copies, because publicationethics.org blocks automated access. v1 covers confidentiality, conflicts of interest, timeliness, expertise ("only agree to review manuscripts for which they have the subject expertise") and tone ("not make derogatory personal comments or unfounded accusations"). A search snippet says v2 (September 2017) is current; **I could not open v2, so no v2 wording is on the slide.** Open the official PDF in a browser before quoting COPE.
 :::
 
 # A structured review {.smaller}
 
-## The format
+## The format {.smaller}
 
 | Part | Content |
 |---|---|
@@ -108,10 +124,16 @@ Checked against the COPE PDF (v1, March 2013, Irene Hames for COPE Council; read
 
 Written for **the editor and the authors**.
 
+::: aside
+Journals' forms differ. A similar four-part template: introduction, major flaws, minor flaws, other (Stiller-Reeve, *Nature* career column, 2018).
+:::
+
 ::: notes
 Clock: 4:00–6:00 (cumulative 6 min).
 
 The summary proves you understood the paper. Order major concerns by importance. Many journals ask for comments to the authors and confidential comments to the editor. Follow the journal form.
+
+This four-part format is a teaching layout, not a standard. Stiller-Reeve (*Nature* career column, 24 Oct 2018; full text read from a third-party copy of the Nature page) suggests three readings, classifying comments as major or minor, writing a "mirror" of the paper, and a template: "1. Introduction ... 2. Major flaws; 3. Minor flaws; 4. Other, lesser suggestions and final comments." Kelly et al., *EJIFCC* 2014 (full text) give a ten-point guide and an overview-first structure with no major/minor split. The recommendation goes to the editor.
 :::
 
 ## What to check {.smaller}
@@ -131,10 +153,16 @@ The summary proves you understood the paper. Order major concerns by importance.
 :::
 :::::
 
+::: aside
+EQUATOR keeps a database of 700+ reporting guidelines; STROBE covers observational studies.
+:::
+
 ::: notes
 Clock: 6:00–8:00 (cumulative 8 min).
 
-EQUATOR Network hosts the reporting guidelines. For this session the relevant one is STROBE (observational studies). Keep to the list; do not turn this into a statistics lecture.
+EQUATOR Network hosts the reporting guidelines (its home page: "a database of reporting guidelines", 700+). For this session the relevant one is STROBE (observational studies). Keep to the list; do not turn this into a statistics lecture.
+
+STROBE cross-sectional checklist, wording read from the official PDF: item 10 "Explain how the study size was arrived at"; item 12(d) "If applicable, describe analytical methods taking account of sampling strategy"; item 13 numbers at each stage and "Consider use of a flow diagram"; item 16(a) estimates "and their precision (eg, 95% confidence interval)". STROBE has **no ethics item**; the ethics statement standard is ICMJE IV.A ("approved by an independent local, regional or national review body").
 :::
 
 ## Tone: critique the work, not the authors {.smaller}
@@ -155,10 +183,16 @@ EQUATOR Network hosts the reporting guidelines. For this session the relevant on
 
 Be **specific**, **constructive**, **evidence-based**.
 
+::: aside
+ICMJE: "Reviewers' comments should be constructive, honest, and polite." In 1,491 review comment sets, 12% had at least one unprofessional comment (Gerwing, *Res Integr Peer Rev* 2020).
+:::
+
 ::: notes
 Clock: 8:00–9:00 (cumulative 9 min). End of structured review.
 
 Illustrative comments written for teaching.
+
+Gerwing TG et al., *Res Integr Peer Rev* 2020;5:9 (full text read): 1,491 comment sets (920 from Publons, 571 from early-career investigators), fields ecology/evolution and behavioural medicine; 12% (179) had at least one unprofessional comment and 41% (611) had incomplete, inaccurate or unsubstantiated critiques. Not medicine-wide. Stiller-Reeve: "Sometimes, you should submit a harsh review, but never a rude one."
 :::
 
 # Activity: Review this {.smaller}
@@ -215,12 +249,18 @@ Pairs write their review. Leave this slide up. Walk round and help. Start the de
 6.  **Policy recommendation** not supported by one hospital's data
 7.  **P values without confidence intervals**
 
+::: aside
+STROBE: study size (item 10), sampling/clustering (12d), participant flow (13), precision (16a). Ethics statement: ICMJE IV.A. Versions: EUCAST publishes yearly; CLSI M100 has numbered editions.
+:::
+
 ::: notes
 Clock: 18:00–20:00 (cumulative 20 min). End of activity.
 
 Reveal after 2 minutes of sharing. **Illustrative:** these seven are the problems I planted. Other genuine problems exist in the text (for example variable selection by P < 0.2). Credit pairs who find them.
 
 The excerpt shows no flow of samples or table of patient characteristics because it is an excerpt. Do not count that as a planted problem.
+
+Where each planted problem sits in the guidance (docs/lit_A_peer_review_basics.md): sample size, STROBE item 10; repeat isolates, STROBE 12(d) and 13; CIs, STROBE 16(a); ethics, ICMJE IV.A (STROBE has none). Version: EUCAST says "There is one update released each year in January" and asks that it be cited with version number and year; CLSI M100 is in its 36th edition (January 2026), which "replaces CLSI M100-Ed35, published in 2025". I found no sentence saying authors "must state the version"; that is a reasoned conclusion.
 :::
 
 # Human vs AI review {.smaller}
@@ -236,16 +276,16 @@ The excerpt shows no flow of samples or table of patient characteristics because
 :::
 
 ::: {.incremental}
--   **Human-style review:** written by me as an expert-style example
--   **AI review:** raw output, **not edited**
+-   **Model answer:** an expert-style review written for this deck
+-   **AI review:** raw output, **not edited**. Same prompt, **nine runs**
 :::
 
 ::: notes
 Clock: 20:00–21:00 (cumulative 21 min).
 
-**Be open about what "human" means here.** The "human" review was written by the assistant that prepared this deck, *after* planting the seven problems, so it catches all seven by design. It is an expert-style model answer, not a measurement of human reviewers. **Dr Narang: replace it with your own review before the session if you can.**
+**Be open about what "human" means here.** The expert-style review was written by the assistant that prepared this deck, *after* planting the seven problems, so it catches all seven by design. It is a model answer, not a measurement of human reviewers. **Dr Narang: replace it with your own review before the session if you can.**
 
-The AI review is the raw output from one call to a small Claude model (Haiku) on 23 Nov 2026, no tools, no web, no context. Prompt and raw output: `ai_demo/review_prompt_and_output.md`. Another tool, model or day will give a different review.
+The AI reviews are raw output from fresh calls on 23 Nov 2026, no tools, no web, no context: 6 to a small Claude model (Haiku) and 3 to a larger one (Opus), plus the first run that is shown in full. Prompt and every raw output: `ai_demo/review_*.md` and `ai_demo/review_prompt_and_output.md`. Another tool, model or day will give a different review.
 :::
 
 ## Two reviews, side by side {.smaller}
@@ -256,12 +296,17 @@ The AI review is the raw output from one call to a small Claude model (Haiku) on
 
 **Summary.** Cross-sectional study of 312 urinary *E. coli* isolates; ESBL 50.6%; prior antibiotic use and hospitalisation associated with ESBL.
 
-**Major.**
+::::: columns
+::: {.column width="50%"}
+**Major**
 
 1.  "Causes" is not supported by a cross-sectional design.
 2.  Policy advice for all of Telangana from one hospital.
 3.  Unit of analysis: repeat isolates? Use first isolate per patient.
 4.  No sample-size justification.
+:::
+
+::: {.column width="50%"}
 5.  Name the CLSI edition; state the ESBL criterion.
 6.  Ethics approval and consent waiver not stated.
 7.  Report 95% CIs with every OR and percentage.
@@ -269,22 +314,31 @@ The AI review is the raw output from one call to a small Claude model (Haiku) on
 **Minor.** Name the identification method; follow STROBE.
 
 **Recommendation.** Major revision.
+:::
+:::::
 
-### AI (raw)
+### AI (raw, run 1)
 
-**Recommendation: Major revision.** Lists 11 major and 6 minor comments. Leads with:
+**Recommendation: Major revision.** 11 major and 6 minor comments. Leads with:
 
+::::: columns
+::: {.column width="50%"}
 1.  Causal language not supported by design
 2.  Prescribing recommendations overreach
 3.  Denominator and sampling frame missing; repeat isolates
 4.  Patient characteristics absent
 5.  Confounder collection too thin
 6.  Exposure definitions unclear
+:::
+
+::: {.column width="50%"}
 7.  Statistics: P < 0.2 selection; CIs missing
 8.  AST needs CLSI edition, QC strain, denominators
 9.  ESBL confirmation criterion; AmpC
 10. ESBL 50.6% vs ceftriaxone 53.8%: check consistency
 11. Ethics and data governance not described
+:::
+:::::
 
 :::
 
@@ -296,22 +350,27 @@ The AI tab is my short list of the AI's own comment headings, in its order. The 
 
 ## Who caught what {.smaller}
 
-| Problem | Human-style | AI |
+| Problem | Model answer | AI (9 runs) |
 |---|---|---|
-| Causal conclusion | ✔ | ✔ |
-| Policy overreach | ✔ | ✔ |
-| Unit of analysis / repeat isolates | ✔ | ✔ |
-| CLSI version | ✔ | ✔ |
-| Ethics statement | ✔ | ✔ |
-| P values without CIs | ✔ | ✔ |
-| **Sample-size justification** | ✔ | **✘ missed** |
-| Variable selection by P < 0.2 (unplanted) | | ✔ |
-| ESBL vs ceftriaxone consistency (unplanted) | | ✔ |
+| Causal conclusion | ✔ | 9 of 9 |
+| Policy overreach | ✔ | 9 of 9 |
+| Unit of analysis / repeat isolates | ✔ | 9 of 9 |
+| CLSI version | ✔ | 9 of 9 |
+| Ethics statement | ✔ | 9 of 9 |
+| P values without CIs | ✔ | 9 of 9 |
+| **Sample-size justification** | ✔ | **1 of 9** (a passing remark) |
+| Variable selection by P < 0.2 (unplanted) | | 9 of 9 |
+| ESBL vs ceftriaxone gap (unplanted) | | 6 of 9 |
+| A problem that is **not there** | | 1 of 9 |
 
 ::: notes
 Clock: 25:00–28:00 (cumulative 28 min).
 
-**Honest result from this one run:** the AI caught 6 of 7 planted problems and missed the sample-size justification. It also found two real problems I had not planted. Its 95% CI for 158/312 ("roughly 45% to 56%") is right. In the other direction, the "human-style" column catches all seven by design, so do not read this table as "AI is worse than humans" or "AI is as good as humans". It shows what one AI review looked like.
+**Honest result from nine runs** (counted by keyword search of the saved files, then checked by reading; see `ai_demo/` and `docs/ai_review_tally.md`). All nine runs recommended major revision. Six of the seven planted problems were caught in every run. **Sample-size justification:** one run (Haiku 1) asked the authors to "report the reason for the sample size of 312"; the other eight said nothing, and one Opus run called the sample size "reasonable for the question", although the excerpt gives no justification. **Unplanted but real:** all nine flagged variable selection by P < 0.2; six asked about the gap between ceftriaxone resistance (53.8%) and ESBL (50.6%); five raised AmpC.
+
+**A problem that is not there:** Haiku 2 wrote "the text mixes 'hospitalisation' (British) with 'hospitalization' conventions". The excerpt contains only "hospitalisation". Show it: search the excerpt. Another small invention: Opus 3 said the model was "adjusted for only age, sex and hospitalisation", but the excerpt never says what entered the model.
+
+The model-answer column catches all seven by design, so do not read this table as "AI is worse than humans" or "AI is as good as humans". It shows what nine AI reviews looked like.
 
 **Missed by both:** whether the data are real. Neither reviewer can tell from text whether the isolates were truly tested as described.
 :::
@@ -322,30 +381,33 @@ Clock: 25:00–28:00 (cumulative 28 min).
 ::: {.column width="50%"}
 **Good at**
 
--   Checklist and **reporting gaps**
--   Missing **CIs**, denominators, methods detail
+-   Checklist and **reporting gaps**: flow diagram, per-drug denominators, QC strain, CLSI edition
+-   Missing **CIs** and methods detail
 -   Language
 :::
 
 ::: {.column width="50%"}
 **Weak at**
 
--   **Context:** it asked for a flow diagram and a patient table from a 300-word excerpt
--   Generic points (data dictionary, "reporting checklist")
+-   **Context:** asked for a flow diagram, patient table and ethics number from a 300-word excerpt
+-   **Invented** a problem (1 of 9), assumed model details
+-   Mostly **missed** the sample-size gap (8 of 9)
 -   Novelty, plausibility, whether **data are real**
 :::
 :::::
 
 ::: aside
-AI can also invent problems, facts or references, and can agree too much. This run did **not** invent a reference and was not flattering. Do not assume that holds next time.
+Published: GPT-4 and human reviewers raised overlapping points 31–39% of the time, close to two humans (29–35%); 57.4% of 308 researchers found GPT-4 feedback helpful (Liang, *NEJM AI* 2024; abstract only). LLM reviews also made claims the authors never stated (Du, EMNLP 2024; NLP papers).
 :::
 
 ::: notes
 Clock: 28:00–30:00 (cumulative 30 min). End of Human vs AI.
 
-Draw only what the raw output shows. Observed in this run: generic or excerpt-blind requests (flow diagram, characteristics table, ethics approval number, data dictionary); a sloppy technical line ("disc breakpoints for nitrofurantoin and fosfomycin differ by disc content"; check against CLSI before trusting it); no invented references; no flattery.
+Draw only what the raw output shows. Observed across nine runs: generic or excerpt-blind requests (flow diagram, characteristics table, ethics approval number, a limitations section, a data dictionary in run 1); one invented problem (Haiku 2 spelling); one assumption about the model (Opus 3); a technical line in run 1 ("disc breakpoints for nitrofurantoin and fosfomycin differ by disc content"; not checked against CLSI); five of nine runs said the percentages agree with n = 312, but the excerpt gives no per-drug denominators (in the running example nitrofurantoin was tested on 298 isolates), so say that a reviewer can check arithmetic, not truth. No invented references (the reviews contain no reference lists). No flattery: every run opened with a mild positive line such as "local antibiogram data are useful" and still recommended major revision.
 
-Not observed in this run but known risks of AI feedback: sycophancy, invented problems, invented references. Say these are known risks, not findings of this run.
+Not observed but known risks of AI feedback: sycophancy, invented references. Say these are known risks, not findings of these runs.
+
+Published numbers (docs/lit_B_ai_in_review.md). Liang et al., *NEJM AI* 2024 (arXiv 2310.01783), **abstract only**: the overlap in points raised was 30.85% (Nature journals) and 39.23% (ICLR) between GPT-4 and human reviewers, against 28.58% and 35.25% between two human reviewers. In a user study of 308 researchers, 57.4% found the feedback helpful or very helpful and 82.4% found it more beneficial than feedback from at least some human reviewers. Caveats: overlap measures shared points, not correctness; the users were AI and computational-biology researchers rating feedback on their own papers; I did not read the limitations. **Do not say "AI review is as good as human review."** Du et al., EMNLP 2024 (arXiv 2406.16253, full text searched): LLM reviews were "more prone to generating contradictory claims" and claims "the authors never stated" (NLP papers, not medicine). I found no study that counted fabricated references inside AI-generated reviews, so I give no such rate. Sharma et al. (arXiv 2310.13548, abstract only) show sycophancy across five AI assistants in chat tasks; it is not a peer-review study, so any link is our inference. Not about current models.
 :::
 
 # Rules for AI in peer review {.smaller}
@@ -362,13 +424,29 @@ Not observed in this run but known risks of AI feedback: sycophancy, invented pr
 :::
 
 ::: aside
-ICMJE Recommendations, Section V.B "Use of AI by Reviewers" (icmje.org). Fetched 23 Nov 2026.
+ICMJE Recommendations, Section V.B "Use of AI by Reviewers" (icmje.org; Recommendations updated January 2026). Fetched 23 Nov 2026.
 :::
 
 ::: notes
-Clock: 30:00–32:00 (cumulative 32 min).
+Clock: 30:00–31:30 (cumulative 31.5 min).
 
-The quote on the slide is 12 words, copied from the ICMJE page. The bullets are my short paraphrase of the same section: permission or follow policy; confidentiality "may prohibit the uploading of the manuscript to software or other AI technologies where confidentiality cannot be assured unless such use of AI is explicitly permitted by journals"; disclose use to the journal; ensure the content is "appropriate and valid". Policies keep changing. Read the current page and the journal's own policy before you review.
+The quote on the slide is 12 words, copied from the ICMJE page (Section V.B). The bullets are my short paraphrase of the same section, which has three sentences: (1) follow the journal's stated policy or request permission before using AI; (2) reviewers must keep the manuscript confidential (Section II.C.2.c), which "may prohibit the uploading of the manuscript" to AI tools where confidentiality cannot be assured, unless the journal explicitly permits it; (3) reviewers who use AI should disclose it to the journal and make sure the content is appropriate and valid, because AI output "can be incorrect, incomplete, or biased". The source says "or request permission", not "and". Policies keep changing: read the current page and the journal's own policy before you review.
+:::
+
+## Journals differ: read the policy {.smaller}
+
+| Source | Reviewers and AI (accessed Nov 2026) |
+|---|---|
+| **ICMJE** V.B | Follow the journal's AI policy or ask permission; disclose use |
+| **Elsevier** | Reviewers "should not upload the material/manuscript or any part thereof into a generative AI tool" |
+| **Springer Nature** | Reviewers "must not use AI to generate or substitute their critical evaluation"; disclose any AI use |
+| **Wiley** | No uploading manuscripts into GenAI tools; AI used to improve a report must be declared |
+| **NIH** (grants, not journals) | Prohibits generative AI for "analyzing and formulating peer review critiques" |
+
+::: notes
+Clock: 31:30–33:00 (cumulative 33 min).
+
+Sources opened 23 Nov 2026 (docs/lit_B_ai_in_review.md). Elsevier "For Reviewers" page, "Policy updated: July 2026": reviewers should not upload any part of the manuscript, and should not use AI "to assist in the review"; also not even for language. Springer Nature (nature.com/nature/editorial-policies/ai, no date shown): disclose any AI use in the report; must not upload content to unsecured or public AI systems. Older Springer wording seen in search snippets is not current; do not use it. Wiley peer review policy page (no date shown): not uploading manuscripts or parts into GenAI tools; if AI improves a report it must be declared. NIH NOT-OD-23-149 (23 June 2023): covers **grant** peer review, not journals; the live NIH page blocked me, so the text came from an archived copy (snapshot 9 Nov 2026). COPE's "Authorship and AI tools" (13 Feb 2023) covers authors only; I found **no COPE rule on reviewers' AI use**, so do not attribute one. JAMA, BMJ and Sage policies were not opened. Message: the strictest policies bar AI help altogether; the common floor is no uploading and disclosure. Check the journal.
 :::
 
 ## In practice {.smaller}
@@ -385,7 +463,7 @@ You stay **accountable** for every word of your review.
 | You used AI for wording or checks | **Disclose** it |
 
 ::: notes
-Clock: 32:00–33:00 (cumulative 33 min).
+Clock: 33:00–34:00 (cumulative 34 min).
 
 This is my reading of the ICMJE reviewer section. The journal's own rules come first. A public chatbot usually cannot assure confidentiality; some tools offer private or enterprise modes, but only a journal can permit their use.
 :::
@@ -416,7 +494,7 @@ ICMJE Section V.A "Use of AI by Authors": humans are responsible for submitted m
 :::
 
 ::: notes
-Clock: 33:00–36:00 (cumulative 36 min). End of Rules.
+Clock: 34:00–36:00 (cumulative 36 min). End of Rules.
 
 This is my recommendation, built on the ICMJE author section (fetched 23 Nov 2026; paraphrased, not a quote). Never paste another team's manuscript into a tool. Your own draft is yours to share, but check your data-sharing approvals first.
 :::
@@ -433,10 +511,16 @@ This is my recommendation, built on the ICMJE author section (fetched 23 Nov 202
 -   Keep the tone calm, even when the comment is not
 :::
 
+::: aside
+Noble, *PLoS Comput Biol* 2017 (rules 2, 5, 9); PLOS and Frontiers author guides.
+:::
+
 ::: notes
 Clock: 36:00–38:00 (cumulative 38 min).
 
 Session 10 covered why papers are rejected. This is what to do when the answer is "revise". The same structured layout helps the editor. Quote the comment, then your reply, then the change.
+
+**Sources, as read (docs/lit_C_response_and_appraisal.md).** Noble WS, *PLoS Comput Biol* 2017;13:e1005730 (full text): rule 2 "a rude critique does not justify a rude response from you"; rule 5 "you should not try to avoid a difficult point by simply ignoring it"; rule 9, say clearly what changed relative to the previous version. Noble does **not** say "page and line numbers" and has no thank-you rule. Frontiers author guide (web page): "Repeat each comment exactly", thank the editor and reviewers, "respectfully disagree" with reasons. PLOS author guide (web page): respond in-line to every comment and indicate line numbers. Williams, *J Am Acad Dermatol* 2004 (abstract only): respond completely, politely, and with evidence. Frontiers and PLOS are publisher guides, not peer-reviewed. So "thank them", "every comment" and "line numbers" each rest on at least one guide; "page numbers" are common practice, not found in these sources.
 :::
 
 ## One good reply, one poor reply {.smaller}
@@ -451,7 +535,7 @@ Session 10 covered why papers are rejected. This is what to do when the answer i
 
 ### Good
 
-*"Thank you. We agree. We changed "causes" to "was associated with" in the Abstract (page 2, line 31) and Conclusions (page 11, lines 240–243), and added a limitations paragraph on temporality and residual confounding (page 10, lines 228–236)."*
+*"Thank you. We agree. We changed 'causes' to 'was associated with' in the Abstract (page 2, line 31) and Conclusions (page 11, lines 240–243), and added a limitations paragraph on temporality and residual confounding (page 10, lines 228–236)."*
 
 :::
 
@@ -490,10 +574,16 @@ For feedback on **your own paper**, or on a **review**:
 -   [ ] Is the **tone** appropriate?
 -   [ ] Would I **sign** it as my own?
 
+::: aside
+Scoring tools for AI answers exist (CLEAR, QAMAI) but target health information, not manuscript feedback. This checklist is a teaching tool, not validated.
+:::
+
 ::: notes
 Clock: 41:00–43:00 (cumulative 43 min).
 
-Run the checklist on the AI review from earlier. Specific to this text? Mostly, but the flow diagram and patient table requests are generic for an excerpt. Verified? Check the CI and the "CLSI disc content" line. Invented references? None. Missed a core flaw? It missed sample size. Would you sign it? Only after editing and only if the journal allows AI use.
+Run the checklist on the AI reviews from earlier. Specific to this text? Mostly, but several runs asked for a flow diagram, patient table or ethics number that a 300-word excerpt cannot hold. Verified? Check the CI figure and the "CLSI disc content" line in run 1. Invented facts? None of the nine runs listed references, but one invented a spelling problem (Haiku 2) and one assumed what was in the model (Opus 3). Missed a core flaw? Eight of nine missed the sample-size justification. Tone? Mild praise, firm verdict. Would you sign it? Only after editing and only if the journal allows AI use.
+
+**No validated tool exists for this exact job** (docs/lit_C_response_and_appraisal.md). Two tools score AI answers to health questions: CLEAR (Sallam et al., *Cureus* 2023; five items: sufficient, accurate, evidence-based, clear and concise, free of irrelevant information; pilot-tested; abstract read) and QAMAI (Vaira et al., *Eur Arch Otorhinolaryngol* 2024; six items; tested on ChatGPT-4 answers in head and neck surgery). Neither was built for manuscript feedback. This six-question list is a teaching tool written for this session, not a validated instrument. Do not call it validated.
 :::
 
 ## Take home {.smaller}
@@ -514,12 +604,4 @@ Clock: 43:00–44:00 (cumulative 44 min).
 
 ::: notes
 Clock: 44:00–45:00 (cumulative 45 min). End of session.
-:::
-
-## Thank you
-
-Slides prepared with Dr Arun Mitra, AIIMS Bibinagar.
-
-::: notes
-After 45:00. Closing slide.
 :::

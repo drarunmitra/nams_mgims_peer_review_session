@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facilitator Guide: Peer Review Session</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1d2327; --muted: #5d6870; --line: #d8dde1;
+    --accent: #1f5560; --maroon: #9e2a2b; --soft: #f1f5f6; --warn: #fff6e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15191b; --fg: #e8ecee; --muted: #9aa6ad; --line: #2e373c;
+      --accent: #6fb4c2; --maroon: #e58a8b; --soft: #1d2427; --warn: #2a2418;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 24px 16px 80px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.35rem; margin: 2.4rem 0 .6rem; padding-top: .4rem; border-top: 2px solid var(--accent); color: var(--accent); }
+  h3 { font-size: 1.08rem; margin: 1.6rem 0 .4rem; }
+  p, li { max-width: 72ch; }
+  .sub { color: var(--muted); margin: 0 0 1rem; }
+  nav { background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 10px 16px; margin: 1rem 0 1.5rem; }
+  nav ol { margin: 4px 0; padding-left: 1.2rem; columns: 2; column-gap: 28px; }
+  nav a { color: var(--accent); text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  table { border-collapse: collapse; width: 100%; margin: .6rem 0 1rem; font-size: .93rem; }
+  th, td { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { border-bottom: 2px solid var(--accent); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  .tablewrap { overflow-x: auto; }
+  .box { background: var(--soft); border-left: 4px solid var(--accent); padding: 8px 14px; margin: 1rem 0; border-radius: 0 6px 6px 0; }
+  .box.warn { background: var(--warn); border-left-color: var(--maroon); }
+  .box p { margin: .3rem 0; }
+  .m { color: var(--maroon); font-weight: 600; }
+  details { border: 1px solid var(--line); border-radius: 6px; margin: .7rem 0; padding: 4px 12px; }
+  summary { cursor: pointer; font-weight: 600; padding: 4px 0; }
+  code { background: var(--soft); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  ul.check { list-style: none; padding-left: 0; }
+  ul.check li::before { content: "\2610\00a0"; }
+  .tag { display: inline-block; font-size: .78rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 10px; padding: 0 8px; margin-left: 6px; }
+  @media print {
+    body { font-size: 11pt; }
+    nav { display: none; }
+    details { border: none; padding: 0; }
+    details > * { display: block; }
+    h2 { break-after: avoid; }
+    tr, .box { break-inside: avoid; }
+  }
+  @media (max-width: 640px) { nav ol { columns: 1; } h1 { font-size: 1.5rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Facilitator Guide</h1>
+<p class="sub">Session 11 · Value of Peer Review: Human and AI-Assisted · 45 minutes</p>
+
+<div class="tablewrap">
+<table>
+  <tr><th>Workshop</th><td>Workshop on AI in Health Research (manuscript writing in the AI era), supported by the National Academy of Medical Sciences (NAMS), India</td></tr>
+  <tr><th>When</th><td>Day 2, 24 November 2026, 16:15–17:00</td></tr>
+  <tr><th>Where</th><td>Sarojini Naidu Hall, Kasturba Hospital, MGIMS Sevagram</td></tr>
+  <tr><th>Presenter</th><td>Dr Rahul Narang, Dean and Professor &amp; Head, Microbiology, AIIMS Bibinagar</td></tr>
+  <tr><th>Audience</th><td>Medical residents, students, and early or mid-career faculty</td></tr>
+  <tr><th>Method</th><td>Peer-review a synthetic manuscript excerpt in pairs, compare with AI reviews, then respond to reviewers and appraise AI feedback with a checklist</td></tr>
+  <tr><th>Slides</th><td><a href="./">Slide deck (HTML)</a> · <a href="Peer_Review_Session11.pdf">PDF copy</a> · <a href="handout.pdf">Handout (PDF)</a> · <code>handout.docx</code></td></tr>
+</table>
+</div>
+
+<nav aria-label="Contents">
+<strong>On this page</strong>
+<ol>
+  <li><a href="#goals">What people should leave with</a></li>
+  <li><a href="#prep">Before the session</a></li>
+  <li><a href="#run">Run of show (minute by minute)</a></li>
+  <li><a href="#a1">Activity: Review this</a></li>
+  <li><a href="#ai">Human vs AI: what the nine runs showed</a></li>
+  <li><a href="#rules">Rules for AI in peer review</a></li>
+  <li><a href="#resp">Responding to reviewers</a></li>
+  <li><a href="#flex">Running late or early</a></li>
+  <li><a href="#qa">Questions you may get</a></li>
+  <li><a href="#scope">Stay in your lane: neighbouring sessions</a></li>
+  <li><a href="#verify">Check before you teach</a></li>
+</ol>
+</nav>
+
+<h2 id="goals">1. What people should leave with</h2>
+<ul>
+  <li>Peer review is quality control and improvement, not only gatekeeping.</li>
+  <li>A structured review has four parts: summary, major concerns, minor concerns, recommendation.</li>
+  <li>Critique the work, not the authors: be specific, constructive and evidence-based.</li>
+  <li>AI is good at checklist gaps. It is not a judge of science or truth, and it can be wrong with a confident voice.</li>
+  <li>Never upload a manuscript you are reviewing to a tool that cannot keep it confidential. Follow the journal's AI policy and disclose use.</li>
+  <li>A good response to reviewers answers every comment, shows each change, and disagrees politely with evidence.</li>
+</ul>
+
+<div class="box">
+<p><strong>This session builds on two earlier ones.</strong> At 14:00 the group already gave and received feedback on abstracts. At 15:30 Session 10 (Dr Subodh Gupta) covers why manuscripts get rejected. Do <em>not</em> repeat the list of rejection reasons. Here the audience practises the reviewer's side and the author's reply.</p>
+<p><strong>The running example is synthetic.</strong> 312 urinary <em>E. coli</em> isolates at a tertiary hospital in Telangana (same example as Session 4). The manuscript excerpt, its seven planted problems and the author replies are written for teaching.</p>
+</div>
+
+<h2 id="prep">2. Before the session</h2>
+<div class="box warn">
+<p><strong>Do this first.</strong> The "human" review on slide 16 was <em>not</em> written by a human reviewer. It was written by the assistant that prepared the deck, after planting the seven problems, so it catches all seven by design. <strong>Replace it with your own review</strong> if you can (slide 16 and the table on slide 17), or say plainly that it is a model answer.</p>
+</div>
+<h3>The day before</h3>
+<ul class="check">
+  <li>Print the handout (<code>handout.pdf</code>, 2 pages: excerpt, review template, AI checklist; no answers). One per pair.</li>
+  <li>Open <code>index.html</code> in the browser you will use. Press <code>S</code> once to see the speaker notes. Every slide has a clock line.</li>
+  <li>Read the notes on slides 3, 5, 13, 16, 17, 18, 20 and 21. They say what is verified and what is not.</li>
+  <li>Skim two or three of the raw AI reviews in <code>ai_demo/</code> (<code>review_haiku_2.md</code> holds the invented spelling problem; <code>review_opus_3.md</code> calls the sample size "reasonable"). <code>docs/ai_review_tally.md</code> has the counts.</li>
+  <li>Decide who times the pair activity.</li>
+</ul>
+<h3>In the room (15 minutes before)</h3>
+<ul class="check">
+  <li>Slides load, numbers show, text is readable from the back row.</li>
+  <li>Open the ICMJE page for reviewers in a second tab: <code>icmje.org</code>, Section V "Use of AI in publishing", V.B.</li>
+  <li>Keep <code>excerpt.md</code> open in a text editor so you can search it live (slide 17: the "hospitalization" check).</li>
+  <li>A spare PDF copy of the deck, and a microphone for answers.</li>
+</ul>
+
+<h2 id="run">3. Run of show</h2>
+<p>Times are clock minutes from the start. They add up to 45. Slide numbers count section dividers.</p>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Minutes</th><th>Slides</th><th>Block and what to do</th></tr></thead>
+  <tbody>
+  <tr><td class="num">0–0.5</td><td>1–2</td><td><strong>Welcome.</strong> Name the plan. Say the data are synthetic.</td></tr>
+  <tr><td class="num">0.5–2</td><td>3</td><td>More than a gate. Link to the 14:00 abstract feedback: "What was the most useful comment you got?"</td></tr>
+  <tr><td class="num">2–3.5</td><td>4</td><td>Models of peer review. Check the journal's own description.</td></tr>
+  <tr><td class="num">3.5–4</td><td>5</td><td>Reviewer's duties. <strong>End of Why.</strong></td></tr>
+  <tr><td class="num">4–6</td><td>6–7</td><td>The format: summary, major, minor, recommendation. Written for editor and authors.</td></tr>
+  <tr><td class="num">6–8</td><td>8</td><td>What to check. Keep to the list; do not turn it into a statistics lecture.</td></tr>
+  <tr><td class="num">8–9</td><td>9</td><td>Tone: poor versus better comment. <strong>End of structured review.</strong></td></tr>
+  <tr><td class="num">9–10</td><td>10</td><td><strong>Activity starts.</strong> Hand out the sheet. Pairs, 8 minutes.</td></tr>
+  <tr><td class="num">10–12</td><td>11</td><td>Excerpt: abstract on screen. Pairs start writing. Do not hint at the problems.</td></tr>
+  <tr><td class="num">12–18</td><td>12</td><td>Excerpt: key Methods. Leave it up. Walk round and help.</td></tr>
+  <tr><td class="num">18–20</td><td>13</td><td>Answer key after two minutes of sharing. <strong>End of activity.</strong></td></tr>
+  <tr><td class="num">20–21</td><td>14–15</td><td>Two reviewers. Say what "human" means here.</td></tr>
+  <tr><td class="num">21–25</td><td>16</td><td>Two reviews side by side: about two minutes per tab.</td></tr>
+  <tr><td class="num">25–28</td><td>17</td><td>Who caught what (nine AI runs).</td></tr>
+  <tr><td class="num">28–30</td><td>18</td><td>What to take from this. <strong>End of Human vs AI.</strong></td></tr>
+  <tr><td class="num">30–31.5</td><td>19–20</td><td>What ICMJE says about reviewers and AI.</td></tr>
+  <tr><td class="num">31.5–33</td><td>21</td><td>Journals differ: read the policy.</td></tr>
+  <tr><td class="num">33–34</td><td>22</td><td>In practice: four cases.</td></tr>
+  <tr><td class="num">34–36</td><td>23</td><td>For authors: AI-check your own draft. <strong>End of Rules.</strong></td></tr>
+  <tr><td class="num">36–38</td><td>24–25</td><td>Point-by-point basics.</td></tr>
+  <tr><td class="num">38–40.5</td><td>26</td><td>One good reply, one poor reply. Ask why the poor one fails.</td></tr>
+  <tr><td class="num">40.5–41</td><td>27</td><td>When you disagree. <strong>End of Responding.</strong></td></tr>
+  <tr><td class="num">41–43</td><td>28–29</td><td>AI appraisal checklist. Run it on the AI review from earlier.</td></tr>
+  <tr><td class="num">43–44</td><td>30</td><td>Take home.</td></tr>
+  <tr><td class="num">44–45</td><td>31</td><td>Questions. <strong>End of session.</strong></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="a1">4. Activity: Review this (9–20)</h2>
+<p><strong>Set-up.</strong> Pairs read the excerpt (handout, or slides 11–12) and write a short review on the template: summary, major, minor, recommendation. Eight minutes. Do not tell them how many problems there are.</p>
+<h3>Answer key: the seven planted problems</h3>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>#</th><th>Problem</th><th>Where in the text</th><th>What a good review says</th></tr></thead>
+  <tbody>
+  <tr><td class="num">1</td><td>Unit of analysis unclear</td><td>"all <em>E. coli</em> isolates", no first-isolate rule</td><td>State whether repeat isolates from the same patient were included; use first isolate per patient or account for clustering.</td></tr>
+  <tr><td class="num">2</td><td>CLSI/EUCAST version not stated</td><td>"read using CLSI breakpoints"</td><td>Name the document and edition; breakpoints change between editions.</td></tr>
+  <tr><td class="num">3</td><td>No sample-size justification</td><td>Nothing in Methods</td><td>Say how 312 was chosen, or that it was a census of the year.</td></tr>
+  <tr><td class="num">4</td><td>No ethics statement</td><td>Absent from the excerpt</td><td>Ask for committee approval and a consent waiver for routine data.</td></tr>
+  <tr><td class="num">5</td><td>Causal conclusion from a cross-sectional design</td><td>"Prior antibiotic use causes ESBL production"</td><td>Reword to "was associated with"; discuss confounding and temporality.</td></tr>
+  <tr><td class="num">6</td><td>Policy recommendation not supported</td><td>"stop using ceftriaxone"; "first-line … for all UTIs in Telangana"</td><td>One hospital cannot set state policy; nitrofurantoin does not suit upper-tract infection.</td></tr>
+  <tr><td class="num">7</td><td>P values without confidence intervals</td><td>aOR 2.4, P &lt; 0.001; aOR 1.7, P = 0.048</td><td>Report 95% CIs with every OR and percentage.</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="box">
+<p><strong>Genuine problems that were not planted</strong> (credit pairs who find them): variable selection by univariable P &lt; 0.2; no per-drug denominators (nitrofurantoin and fosfomycin are often tested on fewer isolates); ceftriaxone resistance (53.8%) is higher than ESBL (50.6%), so ask for a cross-tabulation (AmpC is a possible reason); exposure taken from request forms; "resistance is rising" needs a citation; the identification method is "standard methods". Do <em>not</em> count the missing flow diagram or patient table as errors: it is an excerpt.</p>
+</div>
+<h3>Debrief script (2 minutes)</h3>
+<ol>
+  <li>Ask one pair for their summary. Is it one paragraph? Does it say what the paper found, not what they think of it?</li>
+  <li>Ask which major concern they put first. The causal conclusion usually leads.</li>
+  <li>Show the key (slide 13). Ask which they missed. Sample size is the one most often missed, by people and by AI.</li>
+  <li>Ask for one tone check: read a comment aloud that is about the work, not the authors.</li>
+</ol>
+
+<h2 id="ai">5. Human vs AI: what the nine runs showed (20–30)</h2>
+<p>This is a <strong>real</strong> test. The same prompt ("You are a peer reviewer. Review this manuscript excerpt.", then the excerpt) was run nine times on 23 November 2026, with no tools and no web: 6 on a small Claude model, 3 on a larger one. The raw outputs are in <code>ai_demo/</code>. Counts are in <code>docs/ai_review_tally.md</code>.</p>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Problem</th><th>AI runs that caught it (of 9)</th></tr></thead>
+  <tbody>
+  <tr><td>Causal conclusion; policy overreach; repeat isolates; CLSI edition; ethics; P values without CIs</td><td>9 of 9 each</td></tr>
+  <tr><td><strong>Sample-size justification</strong></td><td><strong>1 of 9</strong> (a passing remark). One Opus run called the sample size "reasonable for the question".</td></tr>
+  <tr><td>Variable selection by P &lt; 0.2 (not planted)</td><td>9 of 9</td></tr>
+  <tr><td>Ceftriaxone vs ESBL gap (not planted)</td><td>6 of 9</td></tr>
+  <tr><td>AmpC (not planted)</td><td>5 of 9</td></tr>
+  <tr><td>A problem that is not there</td><td>1 of 9: one run said the text mixes "hospitalisation" with "hospitalization". The excerpt has only "hospitalisation".</td></tr>
+  </tbody>
+</table>
+</div>
+<ul>
+  <li>All nine recommended major revision. None flattered the paper. Each opened with a mild positive line and then gave a firm verdict.</li>
+  <li>No reference could be fabricated: the reviews contain no reference lists. Do not tell the room the AI "invents references" in this task.</li>
+  <li>One run assumed what was in the model ("adjusted for only age, sex and hospitalisation"); the excerpt does not say.</li>
+  <li>Several runs asked for things an excerpt cannot hold (a flow diagram, a patient table, an ethics approval number, a limitations section). One run said, "I reviewed only the excerpt provided".</li>
+  <li>Five runs said the percentages agree with n = 312, but the excerpt gives no per-drug denominators. A reviewer can check arithmetic, not truth.</li>
+</ul>
+<div class="box warn">
+<p><strong>Say clearly:</strong> the "model answer" column catches all seven problems by design, so the comparison does not measure human reviewers. Do not conclude that AI is worse than, or as good as, a human. It shows what nine AI reviews looked like.</p>
+<p><strong>Published context (abstracts only):</strong> GPT-4 and human reviewers raised overlapping points 30.85% (Nature journals) and 39.23% (ICLR) of the time, against 28.58% and 35.25% between two human reviewers; 57.4% of 308 researchers found GPT-4 feedback helpful (Liang et al., <em>NEJM AI</em> 2024). Overlap measures shared points, not correctness. LLM reviews also made contradictory claims and claims the authors never stated (Du et al., EMNLP 2024, NLP papers).</p>
+</div>
+<h3>Caveats to say out loud</h3>
+<ul>
+  <li>Each call was told to use no tools; other tools, models and days will differ.</li>
+  <li>Counts come from keyword search of the saved files, then reading. They are not a blind rating.</li>
+  <li>Missed by both reviewers: whether the data are real.</li>
+</ul>
+
+<h2 id="rules">6. Rules for AI in peer review (30–36)</h2>
+<p>Slide 20 quotes 12 words of ICMJE Section V.B: "Reviewers must adhere to the journal's stated policy on the use of AI…". Three ideas in that section: follow the journal's policy or <em>ask permission</em>; the manuscript is confidential and uploading it where confidentiality cannot be assured may be barred; if you use AI, disclose it and check the output, which "can be incorrect, incomplete, or biased". ICMJE says "or", not "and", for policy and permission.</p>
+<h3>Slide 21: journals differ</h3>
+<ul>
+  <li><strong>Elsevier</strong> (page updated July 2026): no uploading; AI should not be used to assist the review.</li>
+  <li><strong>Springer Nature:</strong> no uploading to unsecured or public AI; disclose any use; AI must not substitute the reviewer's evaluation.</li>
+  <li><strong>Wiley:</strong> no uploading manuscripts into GenAI tools; AI used to improve a report must be declared.</li>
+  <li><strong>NIH</strong> (June 2023) bans generative AI in <em>grant</em> peer review. It is not a journal rule.</li>
+  <li>All read 23 November 2026. Policies change often. JAMA, BMJ and Sage were not opened.</li>
+  <li>COPE's AI statement (13 February 2023) covers authorship only. Do <strong>not</strong> say COPE forbids AI in peer review.</li>
+</ul>
+<h3>Slide 22: in practice</h3>
+<p>Four cases: read the journal's policy and follow it; if it is silent, ask the editor; do not paste the manuscript into a public chatbot; disclose any AI used for wording or checks. A public chatbot usually cannot assure confidentiality. Some tools have private modes, but only a journal can permit their use.</p>
+<h3>Slide 23: for authors</h3>
+<p>Using AI to pre-review <em>your own</em> de-identified draft is legitimate, and the same verification rules apply: check every comment against your manuscript, share no patient identifiers or unpublished data you cannot share, disclose AI use as the journal requires, and stay responsible. ICMJE V.A: "Authors should carefully review and edit the AI-generated content as the output can be incorrect, incomplete, or biased." Detailed ethics and disclosure wording belong to Session 6.</p>
+
+<h2 id="resp">7. Responding to reviewers (36–41)</h2>
+<ul>
+  <li><strong>Thank</strong> the editor and reviewers; <strong>answer every comment</strong> and never ignore one; <strong>quote the comment</strong> then reply; <strong>show each change</strong> with page and line numbers; <strong>disagree politely</strong>, with evidence.</li>
+  <li>Sources read: Noble, <em>PLoS Comput Biol</em> 2017 (full text); the Frontiers and PLOS author guides (web pages, not peer-reviewed); Williams, <em>J Am Acad Dermatol</em> 2004 (abstract only). Noble has no page-and-line rule and no thank-you rule; "line numbers" is in the PLOS guide. Page numbers are common practice, not found in these sources.</li>
+</ul>
+<h3>Slide 26: one good, one poor</h3>
+<p>Reviewer comment: the conclusion says prior antibiotic use "causes" ESBL production. <strong>Poor:</strong> "The reviewer is wrong. Everyone knows antibiotics cause resistance. No change made." It is hostile, skips the point, shows no change. <strong>Good:</strong> thanks, agrees, changes "causes" to "was associated with" in the Abstract and Conclusions, adds a limitations paragraph, and gives page and line numbers. <span class="m">The page and line numbers are invented for teaching.</span></p>
+<h3>Slide 27: when you disagree</h3>
+<p>Reviewer 2 asks for resistance by infection type. The reply explains the request forms did not record it, states this as a limitation, and suggests future work. The missing infection type is a made-up reason, consistent with the excerpt. If you cannot do something, say why and show what you did instead.</p>
+
+<h2 id="flex">8. Running late or early</h2>
+<h3>If you are behind (cut in this order)</h3>
+<ol>
+  <li>Slide 21 (journals differ): name one policy and move on. Saves 1.5 minutes.</li>
+  <li>Slide 4 (models of peer review): read the four rows only. Saves 1 minute.</li>
+  <li>Slide 27 (when you disagree): fold it into slide 26 in one sentence. Saves 0.5 minutes.</li>
+  <li>Slide 16: show only the AI tab and use the key on slide 13. Saves 2 minutes.</li>
+</ol>
+<p><strong>Never cut</strong> the pair activity, the invented-problem check on slide 17, or the AI appraisal checklist.</p>
+<h3>If you are ahead</h3>
+<ul>
+  <li>Ask pairs to swap reviews and mark each other's tone with the checklist.</li>
+  <li>Ask the room to write a point-by-point reply to one of their own major concerns.</li>
+  <li>Take more questions on AI policies.</li>
+</ul>
+
+<h2 id="qa">9. Questions you may get</h2>
+<details><summary>Can I use ChatGPT to help review a paper?</summary>
+<p>Only if the journal's policy says so, or the editor permits it. Never paste the manuscript into a tool that cannot keep it confidential. If you do use AI, disclose it and check every point yourself. Read the journal's current policy: Elsevier bars AI help; Springer Nature and Wiley allow limited, declared use but not uploading to public tools.</p></details>
+<details><summary>Is an AI review as good as a human review?</summary>
+<p>We cannot say from this session. In published work GPT-4 and human reviewers raised overlapping points about as often as two humans did, but overlap is not correctness. In the nine runs here, AI caught the planted reporting gaps and missed the sample-size justification in 8 of 9.</p></details>
+<details><summary>Did the AI invent references?</summary>
+<p>Not in this task: the reviews have no reference lists. In other tasks it can (published rates from older models are in the Session 7 deck). Check every claim and citation.</p></details>
+<details><summary>What if I disagree with a reviewer who is wrong?</summary>
+<p>Say so politely and give evidence: data, a guideline, a citation. Show what you changed or why you did not. Never ignore the comment.</p></details>
+<details><summary>How many reviewers and how long should a review be?</summary>
+<p>It depends on the journal. Follow the review form. Order major concerns by importance. A review is as long as it needs to be to be specific.</p></details>
+<details><summary>Do reviewers catch most errors?</summary>
+<p>Not reliably. In a BMJ test (Schroter 2008, abstract only), 607 reviewers found on average 2.6 of 9 inserted major errors, and training had small effects. Peer review still improves reports: in a masked before-and-after study of 111 accepted manuscripts, 33 of 34 quality items improved (Goodman 1994, abstract only). That is why a structure and a checklist help.</p></details>
+<details><summary>What does COPE say about reviewers?</summary>
+<p>Version 1 (March 2013) covers confidentiality, conflicts of interest, timeliness, expertise and tone. The 2017 version was not opened for this deck, so check publicationethics.org before quoting. COPE's 2023 statement on AI covers authorship only; it says nothing about reviewers.</p></details>
+<details><summary>Can I reuse a reviewer's comments in my own work?</summary>
+<p>No. Reviews are confidential unless the journal publishes them (open peer review).</p></details>
+
+<h2 id="scope">10. Stay in your lane: neighbouring sessions</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Session</th><th>Owns</th><th>You do</th></tr></thead>
+  <tbody>
+  <tr><td>14:00 group work</td><td>Abstract peer feedback</td><td>Link to it on slide 3. Do not redo it.</td></tr>
+  <tr><td>Session 6, Day 2 09:30 (Dr Pradeep Deshmukh)</td><td>Publication ethics, AI policy and disclosure</td><td>Give the reviewer-specific rules only. No general ethics.</td></tr>
+  <tr><td>Session 9, Day 2 12:15 (Dr Vikash Keshri)</td><td>Scientific writing style</td><td>Do not teach style.</td></tr>
+  <tr><td>Session 10, Day 2 15:30 (Dr Subodh Gupta)</td><td>Why manuscripts get rejected</td><td>Do not list rejection reasons. Teach the reviewer's side and the author's reply.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="verify">11. Check before you teach</h2>
+<p>Every real claim on a slide was fetched and read, unless listed below. Sources and status are in <code>docs/</code>: <code>lit_A_peer_review_basics.md</code>, <code>lit_B_ai_in_review.md</code>, <code>lit_C_response_and_appraisal.md</code>, and <code>ai_review_tally.md</code> for the nine AI reviews.</p>
+<div class="box warn">
+<p><strong>Not verified.</strong> COPE <em>Ethical Guidelines for Peer Reviewers</em>: only <strong>v1 (March 2013)</strong> was read, from mirror copies, because the COPE site blocks automated access. v2 (2017) was not opened, so no v2 wording is on a slide; open the official PDF in a browser before quoting COPE. No authoritative definition of "post-publication review" was found (the slide uses Ross-Hellauer's "open final-version commenting" in plain words). The four-part review format is a teaching layout, not a standard (Stiller-Reeve was read from a third-party copy; Kelly 2014 has no major/minor split). Schroter 2008, Jefferson 2007 (Cochrane) and Goodman 1994 were read as abstracts only. The statement that authors should state the CLSI/EUCAST version is a reasoned conclusion: EUCAST asks for version number and year in citations, and CLSI M100 has numbered editions, but no source says authors "must" state it.</p>
+<p>Also: the first AI run's remark that nitrofurantoin and fosfomycin disc breakpoints differ by disc content was not checked against CLSI; JAMA, BMJ and Sage reviewer-AI policies were not opened; Liang et al. and Goodman 1994 were read as abstracts only; no tool exists that is validated for judging AI feedback on a manuscript (the six-question checklist is a teaching tool); no study was found that counted fabricated references inside AI reviews.</p>
+</div>
+<h3>Synthetic and illustrative</h3>
+<ul>
+  <li>The 312-isolate study, the manuscript excerpt and its seven planted problems.</li>
+  <li><strong>The "human" review</strong> (written by the deck's assistant, not a human reviewer; replace it).</li>
+  <li>The author replies, with their page and line numbers, and Reviewer 2's request.</li>
+</ul>
+<h3>Files</h3>
+<ul>
+  <li><code>index.qmd</code> / <code>index.html</code>: the deck (press <code>S</code> for notes).</li>
+  <li><code>Peer_Review_Session11.pdf</code>: PDF copy of the deck (no speaker notes).</li>
+  <li><code>handout.pdf</code>, <code>handout.docx</code>: 2-page handout, no answers. <code>excerpt.md</code>: the excerpt.</li>
+  <li><code>ai_demo/</code>: nine raw AI reviews and the exact prompt. <code>docs/</code>: literature review and tally.</li>
+</ul>
+
+</div>
+</body>
+</html>

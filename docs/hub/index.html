@@ -1,0 +1,777 @@
+<title>NAMS Session 11 Peer Review Hub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,600&display=swap"><style>
+:root{
+  --bg:#F4F6F5; --surface:#FFFFFF; --ink:#17201D; --muted:#5A6762; --line:#D9E1DE;
+  --accent:#1F5A85; --accent-soft:#E3EDF4; --code:#EEF2F1;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101614; --surface:#171F1C; --ink:#E4EBE8; --muted:#98A5A0; --line:#2A3531;
+    --accent:#86B8DC; --accent-soft:#1C2B36; --code:#1D2724;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101614; --surface:#171F1C; --ink:#E4EBE8; --muted:#98A5A0; --line:#2A3531;
+  --accent:#86B8DC; --accent-soft:#1C2B36; --code:#1D2724;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--sans);padding-inline:16px;padding-block:0 48px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+header.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;
+  padding-block:28px 18px;border-bottom:1px solid var(--line);margin-bottom:24px}
+.eyebrow{font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+h1.name{font:600 30px/1.15 var(--serif);margin:0;text-wrap:balance}
+.meta{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:32px;align-items:start}
+nav.docs{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);display:grid;gap:18px}
+nav.docs h2{font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+nav.docs ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+nav.docs button{all:unset;cursor:pointer;display:block;padding:6px 10px;border-radius:6px;font-size:14px;line-height:1.35;width:100%}
+nav.docs button:hover{background:var(--accent-soft)}
+nav.docs button[aria-current="true"]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+nav.docs .date{display:block;font-size:12px;color:var(--muted);font-weight:400;font-variant-numeric:tabular-nums}
+article{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px clamp(18px,4vw,44px) 40px;min-width:0}
+.dochead{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:8px}
+.dochead h2{font:600 26px/1.2 var(--serif);margin:0 0 6px;text-wrap:balance}
+.dochead .path{font:12px/1.4 var(--mono);color:var(--muted);word-break:break-all}
+.body{max-width:72ch}
+.body h1,.body h2,.body h3,.body h4{font-family:var(--serif);line-height:1.25;text-wrap:balance;margin:1.6em 0 .5em}
+.body h1{font-size:24px}.body h2{font-size:21px}.body h3{font-size:18px}.body h4{font-size:16px}
+.body p,.body ul,.body ol{margin:.6em 0}
+.body li{margin:.2em 0}
+.body blockquote{margin:1em 0;padding:.4em 1em;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 6px 6px 0}
+.body code{font:13px/1.5 var(--mono);background:var(--code);padding:1px 5px;border-radius:4px}
+.body pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto}
+.body pre code{background:none;padding:0}
+.tbl{overflow-x:auto;margin:1em 0}
+.body table{border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.body th,.body td{border-bottom:1px solid var(--line);padding:6px 12px 6px 0;text-align:left;vertical-align:top}
+.body th{font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+@media (max-width:760px){
+  .layout{grid-template-columns:1fr;gap:20px}
+  nav.docs{position:static}
+  nav.docs ul{grid-auto-flow:row}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style><div class="wrap"><header class="top"><div><p class="eyebrow">Research hub</p><h1 class="name">NAMS Session 11 Peer Review</h1></div><div class="meta">4 documents · built 23 Nov 2026, 18:27</div></header><div class="layout"><nav class="docs" aria-label="Documents"><div><h2>Project</h2><ul><li><button type="button" data-doc="docs-lit-a-peer-review-basics-md">Lit A: Peer review basics, source verification (fetched 2026-11-23)<span class="date">23 Nov 2026</span></button></li><li><button type="button" data-doc="docs-lit-b-ai-in-review-md">Lit B: AI in peer review - source verification<span class="date">23 Nov 2026</span></button></li><li><button type="button" data-doc="docs-ai-review-tally-md">AI review tally (9 runs)<span class="date">23 Nov 2026</span></button></li><li><button type="button" data-doc="docs-lit-c-response-and-appraisal-md">Literature check C: responding to reviewers and appraising AI feedback<span class="date">23 Nov 2026</span></button></li></ul></div></nav><div><article data-doc="docs-lit-a-peer-review-basics-md"><div class="dochead"><h2>Lit A: Peer review basics, source verification (fetched 2026-11-23)</h2><div class="path">docs/lit_A_peer_review_basics.md · updated 23 Nov 2026, 18:23</div></div><div class="body">
+<p>Method: every source below was fetched in this session (curl, Europe PMC, PubMed E-utilities, publisher pages). Nothing is from memory. "Quote" cells are at most 15 words, copied from the fetched text.</p>
+<h2 id="summary-table">Summary table</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Source and citation</th>
+<th>URL / ID</th>
+<th>What I opened</th>
+<th>Key finding (as stated)</th>
+<th>Quote</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>COPE Ethical Guidelines for Peer Reviewers, <strong>Version 2, Sept 2017</strong> (DOI 10.24318/cope.2019.1.9 per search snippet)</td>
+<td>publicationethics.org/sites/default/files/cope-ethical-guidelines-peer-reviewers-v2_0.pdf</td>
+<td><strong>Official v2 PDF and guidance page BLOCKED (HTTP 403 / Cloudflare challenge).</strong> Wayback has no snapshot. I could open only two mirror PDFs, and both are <strong>Version 1, March 2013</strong></td>
+<td>v1 text read in full (see section 1). v2 wording NOT verified</td>
+<td>(v1) "respect the confidentiality of peer review and not reveal any details of a manuscript"</td>
+<td><strong>Not found for v2.</strong> v1 only</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ICMJE Recommendations, II.C "Responsibilities in the Submission and Peer-Review Process", 2.a Confidentiality and 3 Peer Reviewers</td>
+<td><a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/responsibilities-in-the-submission-and-peer-review-process.html">https://www.icmje.org/recommendations/browse/roles-and-responsibilities/responsibilities-in-the-submission-and-peer-review-process.html</a> (my first URL attempt 404'd; the live page was reached via the site's own nav link, slug has the site's typo "peer-peview" on some hosts; icmje.org copy at icmje.org/recommendations/browse/roles-and-responsibilities/responsibilities-in-the-submission-and-peer-peview-process.html)</td>
+<td>Full text of II.C</td>
+<td>Reviewers keep manuscripts strictly confidential, declare relationships, recuse if conflict, respond promptly, be constructive/honest/polite; AI upload restrictions</td>
+<td>"Reviewers' comments should be constructive, honest, and polite."</td>
+<td><strong>Verified</strong> (full text)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ross-Hellauer T. What is open peer review? A systematic review. F1000Research 2017;6:588. v2, 31 Aug 2017</td>
+<td>doi:10.12688/f1000research.11369.2; PMID 28580134; PMC5437951</td>
+<td>Full text (Europe PMC)</td>
+<td>122 definitions found, 22 distinct configurations of 7 traits; proposes OPR as umbrella term</td>
+<td>"Authors and reviewers are aware of each other's identity" (open identities)</td>
+<td><strong>Verified</strong> (full text). Post-publication review: only partial, see section 3</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>Schroter S, Black N, Evans S, Godlee F, Osorio L, Smith R. What errors do peer reviewers detect, and does training improve their ability to detect them? J R Soc Med 2008;101(10):507-14</td>
+<td>doi:10.1258/jrsm.2008.080062; PMID 18840867; PMC2586872</td>
+<td><strong>Abstract only</strong> (PubMed). PMC full text not open access via Europe PMC</td>
+<td>607 BMJ reviewers; 3 papers each with 9 major + 5 minor inserted errors; mean major errors found 2.58 / 2.71 / 3.0</td>
+<td>"reviewers found an average of 2.58 of the nine major errors"</td>
+<td><strong>Abstract only</strong></td>
+</tr>
+<tr>
+<td>4b</td>
+<td>Hopewell S, Collins GS, Boutron I, et al. Impact of peer review on reports of randomised trials published in open peer review journals: retrospective before and after study. BMJ 2014;349:g4145</td>
+<td>doi:10.1136/bmj.g4145; PMID 24986891; PMC4077234</td>
+<td>Full text (abstract and intro read; Europe PMC XML)</td>
+<td>93 RCT reports in BMC-series journals, 2012; many lacked key CONSORT items in submitted version</td>
+<td>"Peer reviewers fail to detect important deficiencies in reporting of the methods and results"</td>
+<td><strong>Verified.</strong> NB: the real title is not "peer review and reports of randomised trials"</td>
+</tr>
+<tr>
+<td>4c</td>
+<td>Jefferson T, Rudin M, Brodney Folse S, Davidoff F. Editorial peer review for improving the quality of reports of biomedical studies. Cochrane Database Syst Rev 2007;(2):MR000016 (pub3)</td>
+<td>doi:10.1002/14651858.MR000016.pub3; PMID 17443635; PMC8973931</td>
+<td><strong>Abstract only</strong> (PubMed)</td>
+<td>28 studies included; "little empirical evidence" for editorial peer review as quality mechanism</td>
+<td>"little empirical evidence is available to support the use of editorial peer review"</td>
+<td><strong>Abstract only</strong></td>
+</tr>
+<tr>
+<td>5a</td>
+<td>Kelly J, Sadeghieh T, Adeli K. Peer review in scientific publications: benefits, critiques, and a survival guide. EJIFCC 2014;25(3):227-43</td>
+<td>PMID 27683470; PMC4975196</td>
+<td>Full text</td>
+<td>Ten-point "how to review" list (after Brian Lucey); structure advice is brief; no major/minor split</td>
+<td>"Be sensitive and respectful with word choice and tone in a review."</td>
+<td><strong>Verified</strong></td>
+</tr>
+<tr>
+<td>5b</td>
+<td>Stiller-Reeve M. How to write a thorough peer review. Nature career column, 24 Oct 2018 (print date on copy)</td>
+<td><a href="https://www.nature.com/articles/d41586-018-06991-0">https://www.nature.com/articles/d41586-018-06991-0</a> (URL as printed on the copy)</td>
+<td>Full text via a PDF printout of the Nature page hosted at gi.org/wp-content/uploads/2024/01/Nature_Reviewer_Art-2018.pdf. nature.com itself redirected to a login (303), not opened</td>
+<td>Three readings; classify as major or minor; four-section review template</td>
+<td>"Sometimes, you should submit a harsh review, but never a rude one."</td>
+<td><strong>Verified</strong> (full text, third-party copy)</td>
+</tr>
+<tr>
+<td>5c</td>
+<td>Gerwing TG, Allen Gerwing AM, Avery-Gomm S, et al. Quantifying professionalism in peer review. Res Integr Peer Rev 2020;5:9</td>
+<td>doi:10.1186/s41073-020-00096-x; PMID 32760597; PMC7379804</td>
+<td>Full text</td>
+<td>1491 comment sets; 12% (179) had at least one unprofessional comment; 41% (611) had incomplete, inaccurate or unsubstantiated critiques (IIUC)</td>
+<td>"12% (179) of comment sets included at least one unprofessional comment"</td>
+<td><strong>Verified</strong></td>
+</tr>
+<tr>
+<td>6a</td>
+<td>EQUATOR Network</td>
+<td><a href="https://www.equator-network.org/">https://www.equator-network.org/</a></td>
+<td>Home page</td>
+<td>Network "maintain[s] a database of reporting guidelines"; "Search 700+ reporting guidelines"</td>
+<td>"We maintain a database of reporting guidelines"</td>
+<td><strong>Verified</strong> (see caveat in section 6)</td>
+</tr>
+<tr>
+<td>6b</td>
+<td>STROBE cross-sectional checklist</td>
+<td><a href="https://www.strobe-statement.org/download/strobe-checklist-cross-sectional-studies-pdf">https://www.strobe-statement.org/download/strobe-checklist-cross-sectional-studies-pdf</a></td>
+<td>Full PDF</td>
+<td>Items 10, 12, 13, 16 text below</td>
+<td>"Explain how the study size was arrived at"</td>
+<td><strong>Verified</strong></td>
+</tr>
+<tr>
+<td>6c</td>
+<td>Vandenbroucke JP et al. STROBE: explanation and elaboration. PLoS Med 2007;4(10):e297</td>
+<td>doi:10.1371/journal.pmed.0040297; PMID 17941715; PMC2020496</td>
+<td>Full text (Europe PMC XML)</td>
+<td>No ethics item; the only "ethic*" hit is inside a reference title</td>
+<td>(none, absence)</td>
+<td><strong>Verified</strong> (absence checked by text search)</td>
+</tr>
+<tr>
+<td>7a</td>
+<td>CLSI M100 Performance Standards for Antimicrobial Susceptibility Testing</td>
+<td><a href="https://clsi.org/shop/standards/m100/">https://clsi.org/shop/standards/m100/</a></td>
+<td>Product page</td>
+<td>36th ed., published 26 Jan 2026; "CLSI M100-Ed36 replaces CLSI M100-Ed35, published in 2025"</td>
+<td>"CLSI M100-Ed36 replaces CLSI M100-Ed35, published in 2025."</td>
+<td><strong>Verified</strong></td>
+</tr>
+<tr>
+<td>7b</td>
+<td>EUCAST clinical breakpoint tables and SOP 8.3</td>
+<td><a href="https://www.eucast.org/clinical_breakpoints">https://www.eucast.org/clinical_breakpoints</a> ; SOP 8.3 PDF (10 May 2025)</td>
+<td>Both opened</td>
+<td>Tables are versioned (v 16.1 valid 24 Jun to 31 Dec 2026; v 16.0 dosages 1 Jan 2026); "one update released each year in January"</td>
+<td>"There is one update released each year in January."</td>
+<td><strong>Verified</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-cope-ethical-guidelines-for-peer-reviewers">1. COPE Ethical Guidelines for Peer Reviewers</h2>
+<p><strong>Status of v2: NOT verified.</strong> The official PDF (v2, September 2017) and guidance page returned 403 to curl and WebFetch. A search-engine snippet says v2 is dated September 2017, expands v1 with material for early-career researchers and peer review fraud, and that later COPE page notes mention a 2020 branding refresh and a 2024 wording change ("anonymised review"). I could not open any of that. I did not find anything newer than v2 but could not check the COPE page itself. <strong>Do not put v2 wording on a slide until someone opens the official PDF in a browser.</strong></p>
+<p>What I did read: two mirror copies (car.ca, wnus.usz.edu.pl) that are both <strong>v1, March 2013, Irene Hames for COPE Council</strong>. v1 headings: "Basic principles to which peer reviewers should adhere"; "Expectations during the peer-review process" with sub-headings "On being approached to review", "During review", "When preparing the report"; "Expectations post review". v1 wording (v2 may differ):</p>
+<ul>
+<li>Confidentiality: "respect the confidentiality of peer review and not reveal any details of a manuscript or its review, during or after the peer-review process, beyond those that are released by the journal". Also "keep all manuscript and review details confidential" and "not involve anyone else in the review of a manuscript ... without first obtaining permission from the journal".</li>
+<li>Conflicts of interest: "declare all potential conflicting interests, seeking advice from the journal if they are unsure whether something constitutes a relevant interest". Default triggers if the journal gives no guidance: same institution as an author, recent mentor/mentee/close collaborator/joint grant holder (e.g. within the past 3 years), close personal relationship.</li>
+<li>Timeliness: "only agree to review a manuscript if they are fairly confident they can return a review within the proposed or mutually agreed time-frame, informing the journal promptly if they require an extension." Also "respond in a reasonable time-frame, especially if they cannot do the review".</li>
+<li>Competence: "only agree to review manuscripts for which they have the subject expertise required to carry out a proper assessment and which they can assess in a timely manner"; "notify the journal as soon as possible if they find they do not have the expertise to assess all aspects of the manuscript".</li>
+<li>Constructive and professional tone: "be objective and constructive in their reviews and provide feedback that will help the authors to improve their manuscript"; "not make derogatory personal comments or unfounded accusations"; "be specific in their criticisms, and provide evidence"; "make clear which suggested additional investigations are essential to support claims ... and which will just strengthen or extend the work"; "be aware of the sensitivities surrounding language issues".</li>
+<li>Also useful: confidential comments to the editor "should not be a place for denigration or false accusation".</li>
+</ul>
+<h2 id="2-icmje-opened-in-full-page-footer-shows-2026-no-explicit-revision-date-found-on-the-page">2. ICMJE (opened in full; page footer shows 2026, no explicit revision date found on the page)</h2>
+<p>Section II.C.3 "Peer Reviewers" (full text on the page; AI sentences are new relative to older versions):</p>
+<ul>
+<li>Confidentiality: "Reviewers therefore should keep manuscripts and the information they contain strictly confidential. Reviewers must not publicly discuss authors' work and must not appropriate authors' ideas before the manuscript is published. Reviewers must not retain the manuscript for their personal use and should destroy copies of manuscripts after submitting their reviews."</li>
+<li>Helpers: "Reviewers who seek assistance from a trainee or colleague in the performance of a review should acknowledge these individuals' contributions in the written comments submitted to the editor."</li>
+<li>AI: confidentiality "may prohibit the uploading of the manuscript to software or other AI technologies where confidentiality cannot be assured"; "Reviewers must request permission from the journal prior to using AI technology to facilitate their review."</li>
+<li>Duties: "Reviewers are expected to respond promptly to requests to review and to submit reviews within the time agreed. Reviewers' comments should be constructive, honest, and polite."</li>
+<li>Conflicts: "Reviewers should declare their relationships and activities that might bias their evaluation of a manuscript and recuse themselves from the peer-review process if a conflict exists."</li>
+<li>II.C.2.a (journals): manuscripts are "privileged communications"; "Editors must also make clear that reviewers should keep manuscripts, associated material, and the information they contain strictly confidential."</li>
+<li>II.C.2.c: peer review defined as "the critical assessment of manuscripts submitted to journals by experts who are usually not part of the editorial staff"; journals "should publish a clear, transparent description of their peer-review process".</li>
+<li>Ethics reporting (IV.A, Methods) : "The Methods section should include a statement indicating that the research was approved by an independent local, regional or national review body (e.g., ethics committee, institutional review board)." II.E: authors "should seek approval to conduct research from an independent local, regional or national review body", Helsinki Declaration "as revised in 2024".</li>
+<li>IV.A also: "Describe statistical methods with enough detail to enable a knowledgeable reader with access to the original data to judge its appropriateness" and quantify findings with "confidence intervals". Names STROBE for observational studies and EQUATOR as "Good sources for reporting guidelines".</li>
+</ul>
+<h2 id="3-models-of-peer-review-ross-hellauer-2017-full-text">3. Models of peer review (Ross-Hellauer 2017, full text)</h2>
+<ul>
+<li>Single-blind: "Traditional peer review operates as either 'single-blind', where authors do not know reviewers' identities, or 'double-blind', where both authors and reviewers remain anonymous." (Single-blind is "by far the most common model", per the paper citing Walker &amp; Rocha da Silva 2015.)</li>
+<li>Open peer review has no standard definition: 122 definitions, 22 configurations of 7 traits. Traits as defined: open identities ("Authors and reviewers are aware of each other's identity"); open reports ("Review reports are published alongside the relevant article"); open participation ("The wider community are able to contribute to the review process"); open interaction (reciprocal discussion between authors and reviewers allowed and encouraged); open pre-review manuscripts (preprints before formal review); open final-version commenting ("Review or commenting on final 'version of record' publications"); open platforms or "decoupled review". Open identities plus open reports cover 116 (95.1%) of definitions; adding open participation covers 121 (99.2%).</li>
+<li>Pragmatic definition proposed: OPR "as an umbrella term for a number of overlapping ways that peer review models can be adapted in line with the aims of Open Science".</li>
+<li>Post-publication review: <strong>no authoritative definition obtained.</strong> The paper says "post-publication peer review" is "closely-related" to OPR but excluded unless sources equate them; its nearest trait is open final-version commenting (above). I did not open COPE, publisher or other pages defining it. Slide should use the Ross-Hellauer trait wording or a source found later.</li>
+</ul>
+<h2 id="4-what-reviewers-detect">4. What reviewers detect</h2>
+<ul>
+<li>Schroter 2008 (abstract only): 607 BMJ peer reviewers randomised to face-to-face training, self-taught package, or control. Each got the same three test papers, each with 9 major and 5 minor inserted errors. Baseline (Paper 1) mean 2.58 of 9 major errors; Papers 2 and 3 means 2.71 and 3.0. "The interventions had small effects." Biased randomisation was most frequently detected, "over 60% of reviewers rejecting the papers identifying this error"; reviewers who did not reject found fewer errors and "the proportion finding biased randomization was less than 40% for each paper". Conclusion: "Editors should not assume that reviewers will detect most major errors". I did not see the minor-error numbers (not in the abstract).</li>
+<li>Hopewell 2014 (full text; abstract numbers): 93 trial reports. Of these, 38% (n=35) did not describe random sequence generation, 54% (n=50) allocation concealment, 50% (n=46) blinding, 34% (n=32) sample size calculation, 35% (n=33) primary and secondary outcomes, 55% (n=51) results for the primary outcome, 90% (n=84) trial protocol details. Reviewer-requested changes were relatively few; positive examples: randomisation/blinding (n=27), sample size (n=15), outcomes (n=16), results (n=14), toning down conclusions (n=27); negative: extra unplanned analyses (n=15). These percentages describe what was missing in the <strong>submitted manuscripts</strong> (setting: BMC-series open-review journals).</li>
+<li>Jefferson (Cochrane MR000016 pub3, 2007; abstract only): searches to June 2004; 28 studies. "no clear-cut evidence of effect" of reviewer/author concealment (9 studies); checklists "have some evidence to support their use (2 studies)"; "no evidence that referees' training has any effect" (1 study); peer review "appears to make papers more readable and improve the general quality of reporting (2 studies)" with limited generalisability. I did not check whether a newer version of MR000016 exists (PubMed shows pub3, 2007, as the record).</li>
+</ul>
+<h2 id="5-structure-and-tone">5. Structure and tone</h2>
+<ul>
+<li>Kelly 2014 (full text): ten "how to be an effective peer reviewer" points credited to Brian Lucey: be professional, pleasant ("do not leave ad hominem comments. There is no benefit to being ruthless"), read the invite, helpful ("Suggest how the authors can overcome the shortcomings"), scientific (do not fill the review with typographic comments), timely, realistic, empathetic, open, organised. Structure: "Begin with an overview of the proposed improvements; then provide feedback on the paper structure, the quality of data sources and methods of investigation used, the logical flow of argument, and the validity of conclusions drawn. Then provide feedback on style". Recommendation: reviewers "give recommendations to the editor regarding whether the paper should be accepted, rejected, or improved". The words "major" and "minor" comments do not appear in this sense. Also notes reviewers may "tone down their criticisms in order to be polite".</li>
+<li>Stiller-Reeve 2018 (full text via copy): three readings; "classify your comments as major or minor flaws. Major flaws will need considerable time to explain or correct." A "fatal flaw" ends the review early. After reading one, "mirror" the article by writing your understanding of the science. Review template: "1. Introduction: Mirror the article, state your expertise and whether the paper is publishable, or whether there are fatal flaws; 2. Major flaws; 3. Minor flaws; 4. Other, lesser suggestions and final comments." Tone: read the review aloud; "Ensure that your critiques are constructive and not offensive. Be helpful and not harmful." Cites the "golden rule": "review for others as you would have others review for you".</li>
+<li>Gerwing 2020 (full text): 1491 comment sets (920 from Publons, 571 from six early-career investigators); fields Ecology and Evolution, and Behavioural Medicine. 12% (179) had at least one unprofessional comment; 41% (611) at least one IIUC; 43% (641) both; 57% (850) neither. Table 1 overall: "Demeaned or Attacked the Author" 12%; "Accusation of Questionable Research Practices" 2%; IIUC items include "Superficial Review" 19%, "Arguments from Authority" 27%. Authors call for a universally agreed reviewer code of conduct.</li>
+</ul>
+<h2 id="6-equator-and-strobe">6. EQUATOR and STROBE</h2>
+<ul>
+<li>EQUATOR: stands for "Enhancing the QUAlity and Transparency Of health Research". Home page says it maintains "a database of reporting guidelines" and offers "Search 700+ reporting guidelines". The word "library" does not appear on the page; "database" is the site's own term (call it the reporting-guideline database/library on slides at your discretion). The page has a section "For peer reviewers".</li>
+<li>STROBE cross-sectional checklist (strobe-statement.org PDF), exact wording:
+<ul>
+<li>Item 10 (Study size): "Explain how the study size was arrived at".</li>
+<li>Item 12 (Statistical methods): "(a) Describe all statistical methods, including those used to control for confounding; (b) Describe any methods used to examine subgroups and interactions; (c) Explain how missing data were addressed; (d) If applicable, describe analytical methods taking account of sampling strategy; (e) Describe any sensitivity analyses". So 12(d) is the clustering/sampling item for cross-sectional studies. E&amp;E example for 12(d) mentions "clustering of participants (e.g., in districts or villages)" and design effect.</li>
+<li>Item 13 (Participants): "(a) Report numbers of individuals at each stage--eg numbers potentially eligible, examined for eligibility, confirmed eligible, included in the study, completing follow-up, and analysed; (b) Give reasons for non-participation at each stage; (c) Consider use of a flow diagram". Item 6(a) covers eligibility criteria and selection.</li>
+<li>Item 16 (Main results): "(a) Give unadjusted estimates and, if applicable, confounder-adjusted estimates and their precision (eg, 95% confidence interval). Make clear which confounders were adjusted for and why they were included; (b) Report category boundaries when continuous variables were categorized; (c) ... consider translating estimates of relative risk into absolute risk".</li>
+<li>Also relevant: item 14(b) "Indicate number of participants with missing data for each variable of interest"; item 19 limitations.</li>
+</ul></li>
+<li>Ethics: STROBE has no ethics item (22 items, none on approval or consent). The E&amp;E full text has no ethics discussion (single "ethic" match is a reference title). The ethics-statement standard comes from ICMJE (section 2 above), not STROBE.</li>
+</ul>
+<h2 id="7-clsi-and-eucast-versions">7. CLSI and EUCAST versions</h2>
+<ul>
+<li>CLSI M100 page: "36th Edition", "Date of Publication January 26, 2026"; Overview of Changes: "CLSI M100-Ed36 replaces CLSI M100-Ed35, published in 2025." Together with Ed35 (2025) and Ed36 (Jan 2026) this shows a roughly yearly cycle, but the page does not use the word "annual", so "yearly" is my inference from two consecutive editions on this page. Not checked: earlier editions.</li>
+<li>EUCAST: breakpoint tables page lists "Clinical breakpoints (v 16.1)" valid "24 June 2026 - 31 December 2026" and "Dosages (v 16.0)" dated "1 January 2026". SOP 8.3 section 3.3 "Update frequency": "There is one update released each year in January. Additional updates are normally not provided during the year. A major change or addition during the year is published as a separate addendum." EUCAST citation rule: documents "should be cited in the following way: European Committee on Antimicrobial Susceptibility Testing. Name of document, EUCAST version number, year. Website address."</li>
+<li>"State the version" is therefore supported for EUCAST (own citation rule requires version number and year) and, by inference, for CLSI (editions replace each other). I found no sentence in either source that literally says "authors must state the version"; that is a reasoned conclusion, not a quote.</li>
+</ul>
+<h2 id="open-problems-for-the-deck-author">Open problems for the deck author</h2>
+<ol type="1">
+<li>COPE v2 text unverified (official site blocks automated access). Open the PDF in a browser, or cite only the v1 wording above with "v1 (2013)" flagged. The two connected Chrome browsers could not be selected without user input, so I did not try browser access.</li>
+<li>Post-publication review definition still missing.</li>
+<li>Schroter and Jefferson are abstract-only; Schroter's minor-error numbers were not seen.</li>
+<li>Hopewell title in the brief was not the real title (see table).</li>
+</ol>
+</div></article><article data-doc="docs-lit-b-ai-in-review-md"><div class="dochead"><h2>Lit B: AI in peer review - source verification</h2><div class="path">docs/lit_B_ai_in_review.md · updated 23 Nov 2026, 18:20</div></div><div class="body">
+<p>Checked 2026-11-23. "Opened" = I retrieved the text myself this session. Quotes are verbatim unless marked.</p>
+<h2 id="summary-table">Summary table</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Source</th>
+<th>URL / ID</th>
+<th>Opened?</th>
+<th>Key finding (as stated)</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ICMJE Recommendations, Section V.B "Use of AI by Reviewers"</td>
+<td><a href="https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-reviewers.html">https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-reviewers.html</a></td>
+<td>Full page text (curl)</td>
+<td>See item 1. Recommendations page footer: "Updated January 2026"</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>2</td>
+<td>NIH NOT-OD-23-149, released June 23, 2023</td>
+<td><a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html">https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html</a></td>
+<td>Live site blocked (403, Cloudflare). Full text via Wayback snapshot 2026-11-09</td>
+<td>NIH prohibits reviewers using generative AI to analyse or write critiques of grant applications</td>
+<td>verified (via Wayback)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Liang W et al. NEJM AI 2024;1(8):AIoa2400196 (arXiv 2310.01783)</td>
+<td>doi:10.1056/AIoa2400196; PMID 42932702; <a href="https://arxiv.org/abs/2310.01783">https://arxiv.org/abs/2310.01783</a></td>
+<td>arXiv abstract plus Europe PMC copy of the NEJM AI abstract. NEJM site blocked (403). Full text not read</td>
+<td>GPT-4 vs human overlap 30.85% (Nature) / 39.23% (ICLR); two humans 28.58% / 35.25%; 57.4% found feedback helpful/very helpful; 82.4% more beneficial than at least some human reviewers</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Hosseini M, Horbach SPJM. Res Integr Peer Rev 2023;8:4</td>
+<td>doi:10.1186/s41073-023-00133-5; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10191680/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10191680/</a></td>
+<td>PMC page via fetch tool (it returned a summary with short quotes) plus Crossref metadata</td>
+<td>Disclose LLM use, accept full responsibility, verify accuracy, protect confidentiality, watch for bias</td>
+<td>verified (recheck quotes against the PMC page before quoting)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sharma M et al. arXiv:2310.13548</td>
+<td><a href="https://arxiv.org/abs/2310.13548">https://arxiv.org/abs/2310.13548</a></td>
+<td>arXiv abstract (v4)</td>
+<td>Sycophancy is general across five AI assistants, partly driven by human preference judgments</td>
+<td>abstract only (ICLR 2024 venue not confirmed by me)</td>
+</tr>
+<tr>
+<td>6a</td>
+<td>Elsevier generative AI policy, "For Reviewers". Page says "Policy updated: July 2026"</td>
+<td><a href="https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier">https://www.elsevier.com/about/policies-and-standards/the-use-of-generative-ai-and-ai-assisted-technologies-in-writing-for-elsevier</a></td>
+<td>Full page text (curl)</td>
+<td>Reviewers: no upload, no AI assistance in the review</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>6b</td>
+<td>Springer Nature AI policy</td>
+<td><a href="https://www.nature.com/nature/editorial-policies/ai">https://www.nature.com/nature/editorial-policies/ai</a></td>
+<td>Full page text (curl)</td>
+<td>Risk-based: no upload to unsecured/public AI; disclose; reviewer accountable</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>6c</td>
+<td>Wiley Peer Review Policy</td>
+<td><a href="https://authorservices.wiley.com/Reviewers/journal-reviewers/tools-and-resources/review-confidentiality-policy.html">https://authorservices.wiley.com/Reviewers/journal-reviewers/tools-and-resources/review-confidentiality-policy.html</a></td>
+<td>Full page text (curl)</td>
+<td>No uploading manuscript parts to GenAI; declare AI used to improve a report</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>7</td>
+<td>COPE "Authorship and AI tools", 13 Feb 2023</td>
+<td><a href="https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools">https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools</a></td>
+<td>Live site blocked (403). Opened via Wayback</td>
+<td>Covers authorship and author disclosure only. No peer-review rule</td>
+<td>verified (does not cover reviewers)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Du J et al. "LLMs Assist NLP Researchers: Critique Paper (Meta-)Reviewing", EMNLP 2024 (arXiv 2406.16253)</td>
+<td><a href="https://arxiv.org/abs/2406.16253">https://arxiv.org/abs/2406.16253</a></td>
+<td>arXiv abstract plus full PDF text searched</td>
+<td>LLM reviews more prone to contradictory and unstated claims</td>
+<td>verified (NLP papers, not medicine)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="notes-per-item">Notes per item</h2>
+<h3 id="1-icmje-section-vb-reviewers">1. ICMJE Section V.B (reviewers)</h3>
+<p>Page heading "B. Use of AI by Reviewers", under "V. Use of Artificial Intelligence in Publishing". The page itself has no date. The ICMJE Recommendations page shows "Updated January 2026". Full section text, verbatim:</p>
+<blockquote>
+<p>"Reviewers must adhere to the journal's stated policy on the use of AI or request permission from the journal prior to using AI technology to facilitate their review. As described in Section II.C.2.c, reviewers must maintain the confidentiality of the manuscript, which may prohibit the uploading of the manuscript to software or other AI technologies where confidentiality cannot be assured unless such use of AI is explicitly permitted by journals. Reviewers who use AI in their review should disclose its use to the journal and ensure the content is appropriate and valid as AI can generate output that can be incorrect, incomplete, or biased."</p>
+</blockquote>
+<p>Mapping: policy/permission = sentence 1; confidentiality/uploading = sentence 2; disclosure and checking output = sentence 3. The source says "adhere to the journal's stated policy ... or request permission", not "and".</p>
+<p>V.A (authors), opened: "Authors should carefully review and edit the AI-generated content as the output can be incorrect, incomplete, or biased." Also: "Chatbots (such as ChatGPT) and other AI-assisted tools should not be listed as authors". URL: .../ai-use-by-authors.html.</p>
+<h3 id="2-nih-not-od-23-149">2. NIH NOT-OD-23-149</h3>
+<p>Title: "The Use of Generative Artificial Intelligence Technologies is Prohibited for the NIH Peer Review Process". Release date: June 23, 2023. Scope: NIH grant applications and R&amp;D contract proposals (study-section review), NOT journal peer review. Verbatim:</p>
+<blockquote>
+<p>"NIH prohibits NIH scientific peer reviewers from using natural language processors, large language models, or other generative Artificial Intelligence (AI) technologies for analyzing and formulating peer review critiques for grant applications and R&amp;D contract proposals."</p>
+</blockquote>
+<blockquote>
+<p>"AI tools have no guarantee of where data are being sent, saved, viewed, or used in the future"</p>
+</blockquote>
+<blockquote>
+<p>"uploading or sharing content or original concepts from an NIH grant application, contract proposal, or critique to online generative AI tools violates the NIH peer review confidentiality and integrity requirements."</p>
+</blockquote>
+<p>Accessibility technologies may get an exception after telling the Designated Federal Officer. The live NIH site gave me a Cloudflare challenge, so the text is from archive.org (snapshot 2026-11-09).</p>
+<h3 id="3-liang-et-al">3. Liang et al.</h3>
+<p>Europe PMC copy of the NEJM AI abstract and arXiv v1 abstract agree.</p>
+<ul>
+<li>Sample: 3,096 papers in 15 Nature family journals; 1,709 ICLR papers. The NEJM AI version adds 425 health sciences papers (Nature portfolio) and 666 eLife submissions ("similar patterns").</li>
+<li>Overlap of points, GPT-4 vs human reviewers: 30.85% (Nature), 39.23% (ICLR). Between two human reviewers: 28.58% (Nature), 35.25% (ICLR).</li>
+<li>arXiv v1 adds: overlap was larger for weaker papers.</li>
+<li>User study: 308 researchers from 110 institutions (AI and computational biology). 57.4% found the feedback "helpful/very helpful"; 82.4% found it "more beneficial than feedback from at least some human reviewers".</li>
+<li>Quote (arXiv): "comparable to the overlap between two human reviewers"</li>
+<li>Caveats: overlap measures shared points, not correctness. Users were AI/computational biology researchers rating feedback on their own papers, not clinicians. I did not read the limitations section; the abstract says only "several limitations".</li>
+</ul>
+<h3 id="4-hosseini-and-horbach">4. Hosseini and Horbach</h3>
+<p>Crossref confirms: Res Integr Peer Rev 2023;8:4, published 18 May 2023, DOI 10.1186/s41073-023-00133-5. A correction exists (2023;8:7). From the PMC page (my fetch tool summarised it; quotes are as it returned them, so recheck):</p>
+<ul>
+<li>Confidentiality: LLMs "may store inputted text"; material "should not be fed into LLMs unless security and data protection measures are put in place".</li>
+<li>Bias: "some biases such as those related to geography, race or class might be reinforced".</li>
+<li>Accountability: "Reviewers should disclose the use of LLMs and accept full responsibility" for their reports; human agents should verify accuracy.</li>
+<li>Also: repeating a prompt can give different output; training for researchers on benefits and risks.</li>
+</ul>
+<h3 id="5-sharma-et-al">5. Sharma et al.</h3>
+<p>arXiv 2310.13548 (v4, May 2025). The ICLR 2024 venue comes from the brief; the arXiv page I read does not state it. One line: five state-of-the-art AI assistants consistently showed sycophancy, and humans and preference models sometimes preferred convincing sycophantic answers over correct ones. Quote: "sycophancy is a general behavior of state-of-the-art AI assistants". The paper does not test peer review; any link to review is our inference.</p>
+<h3 id="6-publisher-policies-accessed-2026-11-23">6. Publisher policies (accessed 2026-11-23)</h3>
+<p><strong>Elsevier</strong> (page says "Policy updated: July 2026"):</p>
+<blockquote>
+<p>"Reviewers should not upload the material/manuscript or any part thereof into a generative AI tool" "Generative AI or AI-assisted technologies should not be used by reviewers to assist in the review of the material/manuscript" "The reviewer is responsible and accountable for the content of the review." (this sentence came from the fetch tool; my curl line was cut off after "The reviewer is resp")</p>
+</blockquote>
+<p>It also says reviewers should not upload their communications "even if it is just for the purpose of improving language and readability".</p>
+<p><strong>Springer Nature</strong> (nature.com/nature/editorial-policies/ai, current wording; no date shown):</p>
+<blockquote>
+<p>"Reviewers should disclose any AI use in their report to support transparency and maintain trust in the peer review process." "Reviewers must not use AI to generate or substitute their critical evaluation, recommendation or decision-making."</p>
+</blockquote>
+<p>Also: manuscript content "must not be uploaded to unsecured or public AI systems". The group guidance page says reviewers may use "secure or institutionally-approved AI tools". Older wording (2023-24, "peer reviewers do not upload manuscripts into generative AI tools") appeared only in search snippets; I did not open it. Do not use it.</p>
+<p><strong>Wiley</strong> (peer review policy page, no date shown):</p>
+<blockquote>
+<p>"not uploading manuscripts (or any parts of manuscripts including figures and tables) into Generative Artificial Intelligence (GenAI) tools" "If such tools are used to improve a peer review report, then they must be transparently declared in the report."</p>
+</blockquote>
+<p><strong>JAMA, BMJ, Sage, IOP:</strong> not opened. The Sage page returned 403. Search snippets say Sage and IOP allow AI for language polishing only; unverified, do not cite.</p>
+<p>Pattern: Elsevier is strictest (no AI to assist the review); Springer Nature and Wiley allow limited, declared use but bar uploading to public tools. Tell the audience to read the target journal's current policy.</p>
+<h3 id="7-cope">7. COPE</h3>
+<p>Opened via Wayback (live site 403). "Authorship and AI tools", 13 February 2023. Verbatim:</p>
+<blockquote>
+<p>"AI tools cannot meet the requirements for authorship as they cannot take responsibility for the submitted work."</p>
+</blockquote>
+<p>It also requires authors to disclose AI use in Materials and Methods. It says nothing about reviewers. COPE's site lists a forum session called "Artificial intelligence and peer review" ("the state of artificial intelligence (AI) in peer review is discussed"), but I did not open it, so I have no COPE rule on reviewers to quote. Do not attribute a reviewer-AI rule to COPE.</p>
+<h3 id="8-hallucination-in-ai-reviews">8. Hallucination in AI reviews</h3>
+<p>Best citable study: Du J et al. LLMs Assist NLP Researchers: Critique Paper (Meta-)Reviewing. EMNLP 2024 main; arXiv 2406.16253. Full-text discussion, verbatim:</p>
+<blockquote>
+<p>"LLMs are more prone to generating contradictory claims in their reviews and making claims that the authors never stated in the submission, indicating a tendency towards hallucination."</p>
+</blockquote>
+<p>Their category "Unstated statement": "Statements made in the review are not supported by content in the paper." Limits: NLP papers, expert-annotated review segments, no medical manuscripts, no rate of fabricated references.</p>
+<p>Newer: Lin T-L et al. HalluPeer, arXiv 2609.03580 (EMNLP Findings 2026). I opened the abstract. It is a benchmark with hallucinations injected into reviews; it says "existing detectors struggle to separate hallucinations from legitimate critique". Preprint-level; no rate in the abstract.</p>
+<p>Related, abstract opened: Ye et al., arXiv 2412.01708 "Are We There Yet?". Hidden text in manuscripts can manipulate LLM reviews; LLMs were "potentially assigning higher ratings to incomplete papers compared to full papers". This is manipulation and bias, not hallucination.</p>
+<p>Fabricated references in review reports: I found no study that tested references inside AI-generated peer review reports. Studies on LLM-generated citations in general exist (for example a neurocritical care study, PMC13506236) but I saw only search snippets, did not open them, and they are not about reviews. Not usable.</p>
+<h2 id="what-this-means-for-a-slide">What this means for a slide</h2>
+<p>Safe (opened and checked):</p>
+<ul>
+<li>ICMJE V.B: follow the journal's AI policy or ask permission; confidentiality may bar uploading; disclose; check output because it "can be incorrect, incomplete, or biased". Cite as ICMJE Recommendations, updated January 2026.</li>
+<li>NIH bans generative AI in its grant peer review (NOT-OD-23-149, 23 June 2023). Label it as grant review, not journals.</li>
+<li>Elsevier: no uploading and no AI to assist the review. Springer Nature and Wiley: no uploading to public tools; disclose. Write "accessed Nov 2026".</li>
+<li>Liang et al. numbers (30.85% vs 28.58%; 57.4%; 82.4%), with the caveats above.</li>
+<li>Du et al.: LLM reviews contained contradictory and unstated claims (NLP papers).</li>
+<li>COPE: AI cannot be an author (2023).</li>
+</ul>
+<p>Not safe or needs care:</p>
+<ul>
+<li>Do not say COPE forbids AI in peer review. I found no such COPE text.</li>
+<li>Do not give a "fabricated reference rate in AI reviews". No review-specific figure found.</li>
+<li>Do not say "AI review is as good as human review". GPT-4/human overlap is similar to human/human overlap, and both are only about 30% to 39%.</li>
+<li>Do not use Springer Nature's old "do not upload" wording as current.</li>
+<li>Sharma et al. is about sycophancy in chat tasks, not review. Present the link as our inference.</li>
+<li>Hosseini and Horbach: recheck quotes on the PMC page before using quotation marks.</li>
+<li>Policies change often. The only dates I saw: Elsevier July 2026, ICMJE January 2026.</li>
+</ul>
+</div></article><article data-doc="docs-ai-review-tally-md"><div class="dochead"><h2>AI review tally (9 runs)</h2><div class="path">docs/ai_review_tally.md · updated 23 Nov 2026, 18:19</div></div><div class="body">
+<p>Runs: <code>ai_demo/review_prompt_and_output.md</code> (Haiku, first run), <code>review_haiku_1..5.md</code>, <code>review_opus_1..3.md</code>. Same prompt and excerpt (<code>../excerpt.md</code>), fresh call each, no tools, 2026-11-23. Each file holds the raw, unedited output.</p>
+<p>Method: keyword search of each file for the planted problem, then read to confirm. A "catch" means the review names the problem and asks for a fix. One passing remark counts, but is labelled.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Planted?</th>
+<th>Runs that caught it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Causal conclusion from cross-sectional design</td>
+<td>yes</td>
+<td>9 of 9</td>
+</tr>
+<tr>
+<td>Policy recommendation not supported</td>
+<td>yes</td>
+<td>9 of 9</td>
+</tr>
+<tr>
+<td>Unit of analysis / repeat isolates</td>
+<td>yes</td>
+<td>9 of 9</td>
+</tr>
+<tr>
+<td>CLSI/EUCAST version not stated</td>
+<td>yes</td>
+<td>9 of 9 (all name "edition")</td>
+</tr>
+<tr>
+<td>No ethics statement</td>
+<td>yes</td>
+<td>9 of 9</td>
+</tr>
+<tr>
+<td>P values without CIs</td>
+<td>yes</td>
+<td>9 of 9</td>
+</tr>
+<tr>
+<td>No sample-size justification</td>
+<td>yes</td>
+<td><strong>1 of 9</strong>: haiku_1, a minor comment ("report the reason for the sample size of 312"). opus_3 called the sample size "reasonable for the question"</td>
+</tr>
+<tr>
+<td>Variable selection by univariable P &lt; 0.2</td>
+<td>no</td>
+<td>9 of 9</td>
+</tr>
+<tr>
+<td>Ceftriaxone 53.8% vs ESBL 50.6% gap</td>
+<td>no</td>
+<td>6 of 9 (first run, haiku_1, haiku_3, haiku_4, haiku_5, opus_3)</td>
+</tr>
+<tr>
+<td>AmpC</td>
+<td>no</td>
+<td>5 of 9 (first run, haiku_1, opus_1, opus_2, opus_3)</td>
+</tr>
+<tr>
+<td>Percentages "agree with" n = 312</td>
+<td>no</td>
+<td>5 of 9 said so (haiku_1, haiku_4, haiku_5, opus_1, opus_2). The excerpt gives no per-drug denominators</td>
+</tr>
+</tbody>
+</table></div>
+<p>Recommendation: all nine said major revision.</p>
+<h2 id="things-the-ai-got-wrong-or-made-up">Things the AI got wrong or made up</h2>
+<ul>
+<li><strong>Invented problem (1 of 9):</strong> haiku_2, minor comment 12: "the text mixes 'hospitalisation' (British) with 'hospitalization' conventions". The excerpt contains only "hospitalisation" (checked: 0 occurrences of "hospitalization").</li>
+<li><strong>Assumed detail (1 of 9):</strong> opus_3 says the model was "adjusted for only age, sex and hospitalisation". The excerpt does not say what entered the model.</li>
+<li><strong>Excerpt-blind requests:</strong> several runs ask for items a 300-word excerpt would not hold (flow diagram, patient characteristics table, ethics approval number, a limitations section, a data dictionary in the first run). haiku_3 says "I reviewed only the excerpt provided".</li>
+<li><strong>Not checked:</strong> the first run's line that nitrofurantoin and fosfomycin "disc breakpoints differ by disc content" was not checked against CLSI.</li>
+<li><strong>References:</strong> the reviews contain no reference lists, so no reference could be fabricated. They name real standards (STROBE item 13, CLSI M39 and M100, ICMR AMRSN); I did not verify every technical statement (for example mCIM/eCIM, ATCC 700603).</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>Nine runs of two small-to-large Claude models on one excerpt. Keyword counts can miss paraphrases, and I read for confirmation, not blind. Other tools, prompts or days will differ.</p>
+</div></article><article data-doc="docs-lit-c-response-and-appraisal-md"><div class="dochead"><h2>Literature check C: responding to reviewers and appraising AI feedback</h2><div class="path">docs/lit_C_response_and_appraisal.md · updated 23 Nov 2026, 18:17</div></div><div class="body">
+<p>Checked 2026-11-23. Text was read from PubMed (E-utilities abstract records), PLOS full text, Nature, Frontiers, PLOS Explore and icmje.org pages fetched in this session. Quotes are 15 words or fewer.</p>
+<h2 id="summary-table">Summary table</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Source</th>
+<th>Opened?</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Noble WS. Ten simple rules for writing a response to reviewers. PLoS Comput Biol 2017;13(10):e1005730. doi:10.1371/journal.pcbi.1005730. PMID 29023444. PMC5638205. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005730">https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005730</a></td>
+<td>Full text (PLOS HTML)</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>Williams HC. How to reply to referees' comments when submitting manuscripts for publication. J Am Acad Dermatol 2004;51(1):79-83. doi:10.1016/j.jaad.2004.01.049. PMID 15243528</td>
+<td>Abstract only (PubMed)</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>Nature Struct Mol Biol editorial. Making your point-by-point. Nat Struct Mol Biol 2010 (Apr; URL code nsmb0410-389). <a href="https://www.nature.com/articles/nsmb0410-389">https://www.nature.com/articles/nsmb0410-389</a></td>
+<td>Full text (short editorial)</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>2c</td>
+<td>Frontiers. How to respond to reviewers' comments (publisher author guide, not peer-reviewed). <a href="https://www.frontiersin.org/for-authors/submitting-research/how-to-respond-reviewer-comments">https://www.frontiersin.org/for-authors/submitting-research/how-to-respond-reviewer-comments</a></td>
+<td>Full page</td>
+<td>verified (web guide)</td>
+</tr>
+<tr>
+<td>2d</td>
+<td>PLOS. Responding to peer review (publisher author guide). <a href="https://explore.plos.org/author-resources/responding-to-peer-review">https://explore.plos.org/author-resources/responding-to-peer-review</a></td>
+<td>Full page</td>
+<td>verified (web guide)</td>
+</tr>
+<tr>
+<td>2e</td>
+<td>Annesley TM. Top 10 tips for responding to reviewer and editor comments. Clin Chem 2011;57(4):551-4. doi:10.1373/clinchem.2011.162388. PMID 21282666</td>
+<td>Citation confirmed in PubMed; no abstract; OUP page blocked (Cloudflare challenge)</td>
+<td>exists, content not read</td>
+</tr>
+<tr>
+<td>3a</td>
+<td>Sallam M, Barakat M, Sallam M. Pilot testing of a tool to standardize the assessment of the quality of health information generated by AI-based models (CLEAR). Cureus 2023;15(11):e49373. doi:10.7759/cureus.49373. PMID 38024074. PMC10674084</td>
+<td>Abstract (PubMed)</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>3b</td>
+<td>Vaira LA et al. Validation of the Quality Analysis of Medical Artificial Intelligence (QAMAI) tool. Eur Arch Otorhinolaryngol 2024;281(11):6123-6131. doi:10.1007/s00405-024-08710-0. PMID 38703195. PMC11512889</td>
+<td>PMC page via fetch tool (summary); title confirmed in PubMed</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>3c</td>
+<td>Sallam M, Barakat M, Sallam M. METRICS checklist. Interact J Med Res 2024;13:e54704. doi:10.2196/54704. PMID 38276872. PMC10905357</td>
+<td>Abstract (PubMed)</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>4a</td>
+<td>Walters WH, Wilder EI. Fabrication and errors in the bibliographic citations generated by ChatGPT. Sci Rep 2023;13:14045. doi:10.1038/s41598-023-41032-5. PMID 37679503. PMC10484980</td>
+<td>Abstract (PubMed)</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>4b</td>
+<td>Bhattacharyya M et al. High rates of fabricated and inaccurate references in ChatGPT-generated medical content. Cureus 2023;15(5):e39238. doi:10.7759/cureus.39238. PMID 37337480. PMC10277170</td>
+<td>Abstract (PubMed)</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>4c</td>
+<td>Liang W et al. Can large language models provide useful feedback on research papers? NEJM AI 2024;1(8):AIoa2400196. doi:10.1056/AIoa2400196. PMID 42932702</td>
+<td>Abstract (PubMed)</td>
+<td>abstract only</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ICMJE Recommendations, II.C and V (icmje.org)</td>
+<td>Full pages read</td>
+<td>verified; no author-revision text exists</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Goodman SN, Berlin J, Fletcher SW, Fletcher RH. Manuscript quality before and after peer review and editing at Annals of Internal Medicine. Ann Intern Med 1994;121(1):11-21. doi:10.7326/0003-4819-121-1-199407010-00003. PMID 8198342</td>
+<td>Abstract (PubMed)</td>
+<td>abstract only</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-noble-2017-the-ten-rules-headings-as-stated">1. Noble 2017: the ten rules (headings as stated)</h2>
+<ol type="1">
+<li>Provide an overview, then quote the full set of reviews.</li>
+<li>Be polite and respectful of all reviewers.</li>
+<li>Accept the blame.</li>
+<li>Make the response self-contained.</li>
+<li>Respond to every point raised by the reviewer.</li>
+<li>Use typography to help the reviewer navigate your response.</li>
+<li>Whenever possible, begin your response to each comment with a direct answer to the point being raised.</li>
+<li>When possible, do what the reviewer asks.</li>
+<li>Be clear about what changed relative to the previous version.</li>
+<li>If necessary, write the response twice.</li>
+</ol>
+<p>Quotes (checked verbatim against the PLOS full text):</p>
+<ul>
+<li>Rule 2: "a rude critique does not justify a rude response from you"</li>
+<li>Rule 5: "you should not try to avoid a difficult point by simply ignoring it"</li>
+</ul>
+<p>Other points as stated: Rule 1 says the letter should "contain the complete set of reviews with your responses interleaved". Rule 3 says if the reviewer missed something, apologize and consider revising the text. Rule 9 warns against replying "This point is addressed in the manuscript in the following way", because it does not say whether the text is new. It asks authors to "refer explicitly to the previous and revised versions" and say what changed (it does not say "page/line numbers"). Thanking: the only "thank you" advice is an explicit thank-you in the Acknowledgments for very insightful suggestions; some journals (PLOS Comput Biol included) do not allow naming reviewers.</p>
+<h2 id="2-other-guides-on-the-point-by-point-response">2. Other guides on the point-by-point response</h2>
+<p>What each source says (blank = not addressed in what I read):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Point</th>
+<th>Williams 2004 (JAAD) [abstract only]</th>
+<th>Nature SMB editorial 2010</th>
+<th>Frontiers guide</th>
+<th>PLOS Explore guide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thank reviewers</td>
+<td>Not in abstract</td>
+<td>Not addressed; says be "diplomatic" to reviewers, not "obsequious"</td>
+<td>"Start with a brief thank you to the editor and reviewers."</td>
+<td>If feedback was helpful, "thank them for their thoughtful commentary"</td>
+</tr>
+<tr>
+<td>Answer every comment</td>
+<td>Golden rule 1: "respond completely"</td>
+<td>Aims at "a series of points in response to each point raised by the reviewers"; keep succinct</td>
+<td>"respond to every point, including those that recommend rejection" (unless editor says otherwise)</td>
+<td>"Respond in-line to every comment"</td>
+</tr>
+<tr>
+<td>Quote the comment</td>
+<td>Not in abstract (a "structured layout" is suggested; details not read)</td>
+<td>Not addressed</td>
+<td>"Repeat each comment exactly (no paraphrasing), followed by your response."</td>
+<td>Not addressed</td>
+</tr>
+<tr>
+<td>Show changes, page/line numbers</td>
+<td>Not in abstract</td>
+<td>Not addressed</td>
+<td>No page/line numbers; use comment bubbles or tracked changes and quote revised text</td>
+<td>"indicating line numbers where a change can be found"; use tracked changes. No page numbers mentioned</td>
+</tr>
+<tr>
+<td>Disagree politely with evidence</td>
+<td>Golden rules 2 and 3: "respond politely"; "respond with evidence"</td>
+<td>Be objective; explain why a request is unfeasible, "pointing to the literature if needed"; keep emotion out</td>
+<td>"It's okay to disagree respectfully, but explain why." Reasoning should be "evidence-based"</td>
+<td>Give defensible reasons and extra evidence; respectful language</td>
+</tr>
+</tbody>
+</table></div>
+<p>Notes:</p>
+<ul>
+<li>Williams (abstract): "respond completely; respond politely; and respond with evidence". Conclusion: address concerns "in a courteous, objective, and evidence-based way." I did not read the full text, so I cannot report what it says on quoting comments or line numbers.</li>
+<li>Nature SMB editorial: separate the cover letter to the editor (can be "forthright") from the section reviewers see ("be diplomatic"). Warns against citing your reputation, h-index or celebrity endorsements. Very long point-by-points get a rewrite request.</li>
+<li>Frontiers and PLOS are publisher web guides, not peer-reviewed papers. Use Williams (and Annesley) as the journal-published citations. Annesley exists in PubMed, but I could not open its content, so do not attribute specific tips to it.</li>
+<li>No BMJ, Lancet or EQUATOR guide on this topic was found in my searches; I did not confirm any.</li>
+</ul>
+<h2 id="3-checklists-or-tools-for-appraising-ai-chatbot-output">3. Checklists or tools for appraising AI chatbot output</h2>
+<p>Several exist. None is a universally accepted standard.</p>
+<p><strong>CLEAR tool</strong> (Sallam, Barakat, Sallam; Cureus 2023; PMID 38024074). Five items, each scored on a 5-point Likert scale: (1) Is the content sufficient? (2) accurate? (3) evidence-based? (4) clear, concise, and easy to understand? (5) free from irrelevant information? (Themes: Completeness, Lack of false information, Evidence, Appropriateness, Relevance.)</p>
+<ul>
+<li>Validation as stated: content validity by expert review; pilot with 32 healthcare professionals on 8 topics, Cronbach alpha 0.669-0.981; then two raters scored 4 chatbots on 5 topics, Cohen kappa 0.348 to 0.875.</li>
+<li>The abstract itself calls for more work: "Future studies are recommended to validate the utility of the CLEAR tool" (paraphrase, not verbatim). So: pilot-validated only.</li>
+<li>Later papers from the same group (e.g. BMC Infect Dis 2024, PMID 39118057) call it "the validated CLEAR tool"; that is self-description.</li>
+</ul>
+<p><strong>QAMAI</strong> (Vaira et al., Eur Arch Otorhinolaryngol 2024; PMID 38703195). Six items on 1-5 Likert: accuracy, clarity, relevance, completeness, provision of sources and references, usefulness. Total 6-30 maps to poor / fair / good / very good / excellent. A search summary said it was adapted from mDISCERN; I did not confirm that in the text I read.</p>
+<ul>
+<li>Validation as reported: 27 reviewers, 25 centres, 30 ChatGPT-4 responses, 792 assessments. One factor explained 51.1% of variance; Cronbach alpha 0.837; ICC 0.983; test-retest r 0.876; CFI 0.989; RMSEA 0.053.</li>
+<li>Limits: ChatGPT-4 only, head and neck surgery content, single study. Best validated of the three.</li>
+</ul>
+<p><strong>METRICS</strong> (Sallam et al., Interact J Med Res 2024; PMID 38276872). A reporting checklist for studies of generative AI in health care, not a quality-of-answer score. Nine themes: Model, Evaluation approach, Timing, Transparency of data source, Range of topics, Randomization, Individual factors and inter-rater reliability, Count of queries, Specificity of prompts. Authors call it "preliminary"; applied to 34 records, kappa 0.558-0.962.</p>
+<p><strong>DISCERN adapted for chatbots.</strong> Appeared only in a web search summary (including a claim about a 2025 meta-synthesis of 42 studies). I did not open any of these papers. Unverified; do not cite without checking.</p>
+<p>Plain statement: I found no tool designed or validated for judging AI feedback on a manuscript or a response letter. CLEAR and QAMAI target health information given to patients or clinicians. For the slides, present them as models of structured appraisal and note the gap.</p>
+<h2 id="4-evidence-on-fabricated-or-inaccurate-ai-content">4. Evidence on fabricated or inaccurate AI content</h2>
+<p><strong>Walters and Wilder, Sci Rep 2023</strong> (abstract read). ChatGPT-3.5 and GPT-4 wrote short literature reviews on 42 multidisciplinary topics: 84 papers, 636 citations. Quote: "55% of the GPT-3.5 citations but just 18% of the GPT-4 citations are fabricated."</p>
+<ul>
+<li>Of real (non-fabricated) citations, 43% for GPT-3.5 and 24% for GPT-4 "include substantive citation errors". Exact rates: fabricated GPT-3.5 55%, GPT-4 18%; substantive errors in real citations GPT-3.5 43%, GPT-4 24%.</li>
+<li>Conclusion as stated: "Although GPT-4 is a major improvement over GPT-3.5, problems remain."</li>
+</ul>
+<p><strong>Bhattacharyya et al., Cureus 2023</strong> (abstract read). GPT-3.5 wrote 30 short medical papers with 115 references: 47% fabricated, 46% authentic but inaccurate, 7% authentic and accurate. Incorrect PMID in 93% of papers. Medical topics, so closer to the audience; older model.</p>
+<p><strong>Liang et al., NEJM AI 2024</strong> (abstract read; my fetch of the abstract was partly garbled). This is about feedback, not citations. GPT-4 comments overlapped with human reviewers: average 28.58% (Nature journals) and 35.25% (ICLR), described as comparable with the overlap between two human reviewers. In a user study of 308 researchers, 57.4% found it helpful or very helpful. The abstract says "We also identify several limitations of large language model (LLM)-generated feedback" but does not list them. A balanced counterpoint: AI feedback can help but does not replace human review.</p>
+<p>Caveat: none of these studies tested AI feedback on a response letter. The fabrication studies used 2023 models; rates for current models are not in these sources.</p>
+<h2 id="5-icmje">5. ICMJE</h2>
+<ul>
+<li>Section II.C "Responsibilities in the Submission and Peer-Review Process", Authors subsection: covers authorship and disclosure principles and predatory journals only. No text on revising manuscripts or responding to reviewers. Verdict: none. (The live page URL has a typo, "peer-peview": <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/responsibilities-in-the-submission-and-peer-peview-process.html">https://www.icmje.org/recommendations/browse/roles-and-responsibilities/responsibilities-in-the-submission-and-peer-peview-process.html</a> . The correctly spelled URL returns 404.)</li>
+<li>Same section, Peer Reviewers: "Reviewers' comments should be constructive, honest, and polite."</li>
+<li>Same section: "Peer review often helps authors and editors improve the quality of reporting."</li>
+<li>Section V.A, Use of AI by Authors (<a href="https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html">https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html</a>): "Authors should carefully review and edit the AI-generated content as the output can be incorrect, incomplete, or biased." Also: "humans are responsible for any submitted material that included the use of AI-assisted technologies." Authors should disclose AI use in the cover letter and the submitted work. "Referencing AI-generated material as the primary source is not acceptable."</li>
+<li>Reviewers and AI: "Reviewers should be aware that AI can generate authoritative-sounding output that can be incorrect, incomplete, or biased." Reviewers must ask the journal's permission before using AI.</li>
+<li>ICMJE says nothing specific about authors pasting reviewer comments into a chatbot. The confidentiality text I read is addressed to reviewers and editors; check the target journal's own policy.</li>
+</ul>
+<h2 id="6-goodman-1994-abstract-read">6. Goodman 1994 (abstract read)</h2>
+<p>Masked before-after study of 111 consecutive original research manuscripts accepted at Annals of Internal Medicine (March 1992 to March 1993). 34-item quality tool, each item 1-5; 44 assessors unaware of the aims; different assessors for the two versions.</p>
+<ul>
+<li>33 of 34 items changed in the direction of improvement. Largest gains: discussion of study limitations, generalizations, use of confidence intervals, tone of conclusions.</li>
+<li>The percentage of items scored 3 or more rose by an absolute 7.3% (95% CI 3.3 to 11.3) from a baseline of 75%. Mean item score rose 0.23 points (CI 0.07 to 0.39) from a baseline of 3.5.</li>
+<li>Manuscripts in the bottom 50% improved two- to threefold more than the top 50%, after correction for regression to the mean.</li>
+<li>Quote: "Peer review and editing improve the quality of medical research reporting"</li>
+<li>Caveats: accepted manuscripts only, one journal, peer review and editing combined (cannot be separated), measures report quality not research quality. A companion JAMA paper (PMID 8015119) used 113 manuscripts; do not mix the two.</li>
+</ul>
+</div></article></div></div></div><script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('nav.docs button'));
+  var docs=[].slice.call(document.querySelectorAll('article[data-doc]'));
+  function show(id){
+    var found=docs.some(function(d){return d.dataset.doc===id});
+    if(!found) id=docs[0].dataset.doc;
+    docs.forEach(function(d){d.hidden=d.dataset.doc!==id});
+    btns.forEach(function(b){b.setAttribute('aria-current',b.dataset.doc===id?'true':'false')});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    show(b.dataset.doc);
+    try{history.replaceState(null,'','#'+b.dataset.doc)}catch(e){}
+    window.scrollTo(0,0);
+  })});
+  show(decodeURIComponent((location.hash||'').slice(1)));
+})();
+</script>
